@@ -1,6 +1,7 @@
 import React from "react";
 import { ArrowUpRight } from "lucide-react";
 import { ViewAllProjectsButton } from "./view-all";
+import Image from "next/image";
 
 interface ProjectCardProps {
   title: string;
@@ -17,7 +18,13 @@ const ProjectCard = ({ title, description, image, technologies, url }: ProjectCa
   return (
     <div className="bg-card rounded-xl overflow-hidden shadow-lg transition-all hover:shadow-xl">
       <div className="relative overflow-hidden h-64">
-        <img src={image} alt={title} className="w-full h-full object-cover transition-transform hover:scale-105" />
+        {/* Use Next.js Image component with proper path */}
+        <Image 
+          src={image} 
+          alt={title} 
+          fill
+          className="object-cover transition-transform hover:scale-105"
+        />
       </div>
       <div className="p-6 bg-[#111827]">
         <div className="flex justify-between items-center mb-4">
@@ -48,7 +55,7 @@ export function SelectedWork() {
     {
       title: "E-commerce Platform",
       description: "Modern shopping experience with Next.js and TypeScript",
-      image: "/images/ecommerce-project.jpg", // Replace with your image path
+      image: "/images/ecommerce-project.jpg", // Make sure these images exist in your public folder
       technologies: [
         { name: "React", icon: <span className="text-[#61DAFB]">⚛️</span> },
         { name: "Next.js", icon: <span>N</span> },
@@ -59,7 +66,7 @@ export function SelectedWork() {
     {
       title: "Analytics Dashboard",
       description: "Real-time data visualization platform",
-      image: "/images/analytics-dashboard.jpg", // Replace with your image path
+      image: "/images/analytics-dashboard.jpg",
       technologies: [
         { name: "TypeScript", icon: <span className="text-[#3178C6]">TS</span> },
         { name: "D3.js", icon: <span className="text-[#F9A03C]">D3</span> },
@@ -70,7 +77,7 @@ export function SelectedWork() {
     {
       title: "Mobile Application",
       description: "Cross-platform mobile app for health tracking",
-      image: "/images/mobile-app.jpg", // Replace with your image path
+      image: "/images/mobile-app.jpg",
       technologies: [
         { name: "React Native", icon: <span className="text-[#61DAFB]">⚛️</span> },
         { name: "Firebase", icon: <span className="text-[#FFCA28]">🔥</span> },

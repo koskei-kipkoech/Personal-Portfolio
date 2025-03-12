@@ -1,7 +1,8 @@
 "use client"
 
+import type React from "react"
+
 import { useState, useEffect } from "react"
-import Link from "next/link"
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -15,6 +16,15 @@ function Navbar() {
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
+
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+    e.preventDefault()
+    const element = document.getElementById(id)
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" })
+      setIsMenuOpen(false)
+    }
+  }
 
   return (
     <nav
@@ -35,22 +45,23 @@ function Navbar() {
             {/* Site name with hover animation */}
             <span className="font-medium text-lg group">
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500 group-hover:from-purple-500 group-hover:to-blue-500 transition-all duration-500">
-                Patrick Kipkoech 
+                Patrick Kipkoech
               </span>
             </span>
           </div>
 
           {/* Navigation links with hover animations */}
           <div className="hidden md:flex items-center gap-8">
-            {["Projects", "Skills", "Experience", "Contact"].map((item) => (
-              <Link
+            {["About","Projects", "Skills", "Experience", "Contact"].map((item) => (
+              <a
                 key={item}
                 href={`#${item.toLowerCase()}`}
+                onClick={(e) => handleNavClick(e, item.toLowerCase())}
                 className="relative text-white/70 hover:text-white transition-colors duration-200 group"
               >
                 <span>{item}</span>
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 group-hover:w-full transition-all duration-300"></span>
-              </Link>
+              </a>
             ))}
           </div>
 
@@ -100,14 +111,14 @@ function Navbar() {
         <div className="md:hidden bg-black/95 backdrop-blur-xl">
           <div className="flex flex-col gap-4 p-6">
             {["Projects", "Skills", "Experience", "Contact"].map((item) => (
-              <Link
+              <a
                 key={item}
                 href={`#${item.toLowerCase()}`}
+                onClick={(e) => handleNavClick(e, item.toLowerCase())}
                 className="text-white/70 hover:text-white transition-colors duration-200 py-2"
-                onClick={() => setIsMenuOpen(false)}
               >
                 {item}
-              </Link>
+              </a>
             ))}
           </div>
         </div>
@@ -117,3 +128,4 @@ function Navbar() {
 }
 
 export default Navbar
+
