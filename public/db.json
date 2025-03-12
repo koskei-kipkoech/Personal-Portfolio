@@ -1,0 +1,311 @@
+{
+    "highlightedProjects": [
+        {
+            "id": 1,
+            "title": "E-commerce Platform",
+            "description": "Modern shopping experience with Next.js and TypeScript",
+            "shortDescription": "Modern shopping experience with Next.js and TypeScript",
+            "detailedDescription": "A full-stack e-commerce platform with payment processing, user authentication, and inventory management. The solution provides a seamless shopping experience with features like real-time inventory updates, personalized recommendations, and multi-currency support.",
+            "problemStatement": "Small businesses struggle with expensive e-commerce solutions that lack flexibility and scalability. Most platforms require significant technical knowledge or expensive developers to customize, creating barriers to entry for small merchants.",
+            "responsibilities": [
+                "Frontend architecture using React and Next.js",
+                "Implementing responsive design principles",
+                "Integration with payment gateways",
+                "User experience design and implementation",
+                "Performance optimization"
+            ],
+            "solution": "Built a customizable e-commerce platform that scales with business needs. The solution includes an intuitive admin dashboard, streamlined checkout process, and comprehensive analytics. The platform supports multiple payment methods and shipping integrations while maintaining fast load times and mobile responsiveness.",
+            "outcome": "The platform reduced cart abandonment by 35% and increased mobile conversions by 42%. Merchants reported spending 60% less time on order management and inventory updates compared to previous solutions.",
+            "image": "/titleimage.jpg",
+            "technologies": [
+                {
+                    "name": "React",
+                    "icon": "⚛️"
+                },
+                {
+                    "name": "Next.js",
+                    "icon": "N"
+                },
+                {
+                    "name": "Tailwind",
+                    "icon": "🌊"
+                },
+                {
+                    "name": "Stripe",
+                    "icon": "💳"
+                },
+                {
+                    "name": "MongoDB",
+                    "icon": "🍃"
+                }
+            ],
+            "url": "#",
+            "liveUrl": "https://ecommerce-demo.dev",
+            "featured": true,
+            "categories": [
+                "Web Development",
+                "E-commerce",
+                "UX Design"
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Analytics Dashboard",
+            "description": "Real-time data visualization platform",
+            "shortDescription": "Real-time data visualization platform",
+            "detailedDescription": "A real-time dashboard for monitoring business metrics with customizable widgets and data visualization. The platform processes millions of data points to provide actionable insights through intuitive charts and reports.",
+            "problemStatement": "Companies struggle to make data-driven decisions due to siloed data sources and complex visualization tools. Existing solutions require technical expertise, making it difficult for non-technical stakeholders to access and interpret critical business metrics.",
+            "responsibilities": [
+                "Data visualization architecture",
+                "Real-time data processing implementation",
+                "Creating customizable dashboard widgets",
+                "Optimizing performance for large datasets",
+                "Implementing user permission systems"
+            ],
+            "solution": "Developed a unified analytics platform that integrates multiple data sources and presents information through intuitive, customizable dashboards. The solution includes automated reporting, anomaly detection, and collaboration features that make data accessible to all stakeholders regardless of technical background.",
+            "outcome": "The dashboard reduced reporting time by 75% and improved decision-making speed by providing real-time insights. Users reported a 40% increase in data-driven decisions and identified new business opportunities through previously hidden patterns.",
+            "image": "/titleimage.jpg",
+            "technologies": [
+                {
+                    "name": "TypeScript",
+                    "icon": "TS"
+                },
+                {
+                    "name": "D3.js",
+                    "icon": "D3"
+                },
+                {
+                    "name": "Node.js",
+                    "icon": "🟢"
+                },
+                {
+                    "name": "WebSockets",
+                    "icon": "⚡"
+                },
+                {
+                    "name": "PostgreSQL",
+                    "icon": "🐘"
+                }
+            ],
+            "url": "#",
+            "liveUrl": "https://analytics-demo.dev",
+            "featured": true,
+            "categories": [
+                "Data Visualization",
+                "Business Intelligence",
+                "Frontend Development"
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Shortlet",
+            "description": "Short-stay and holiday home booking platform for Africa",
+            "shortDescription": "Short-stay and holiday home booking platform for Africa",
+            "detailedDescription": "A platform that connects property hosts with customers seeking short-term rental accommodations. The platform caters to customers looking for flexible stays and hosts managing multiple properties across Africa.",
+            "problemStatement": "Customers often face difficulties finding and booking short-term rental accommodations due to poor user experiences, unclear property details, and limited booking options. Similarly, hosts struggle to manage their listings, handle customer inquiries, and track bookings on existing platforms.",
+            "responsibilities": [
+                "End-to-end design process",
+                "User research for both customers and hosts",
+                "Creating high-quality UI designs for mobile apps",
+                "Developing cohesive brand and visual identity",
+                "Designing responsive website",
+                "Collaborating with cross-functional teams"
+            ],
+            "solution": "Designed intuitive mobile apps for customers and hosts, each tailored to their specific needs. The Customer Mobile App simplified property browsing, booking, and communication. The Host Mobile App provided tools for managing listings, tracking bookings, and engaging with customers. Additionally, established a cohesive brand identity and developed a responsive website to create a seamless experience across all platforms.",
+            "outcome": "The newly designed Shortlet platform established a strong foundation for the business, providing a seamless experience for both customers and hosts. The intuitive app made property browsing, booking, and communication effortless, while hosts gained tools to efficiently manage listings. The cohesive brand identity enhanced credibility and trust, helping to attract early adopters.",
+            "image": "/titleimage.jpg",
+            "technologies": [
+                {
+                    "name": "React Native",
+                    "icon": "⚛️"
+                },
+                {
+                    "name": "Firebase",
+                    "icon": "🔥"
+                },
+                {
+                    "name": "GraphQL",
+                    "icon": "GQL"
+                },
+                {
+                    "name": "Figma",
+                    "icon": "🎨"
+                },
+                {
+                    "name": "AWS",
+                    "icon": "☁️"
+                }
+            ],
+            "url": "#",
+            "liveUrl": "https://shortlet.app",
+            "featured": true,
+            "categories": [
+                "Product Design",
+                "Mobile App",
+                "UX Research"
+            ]
+        }
+    ],
+    "allProjects": [
+        {
+            "id": 1,
+            "title": "E-Commerce Platform",
+            "description": "A full-stack e-commerce platform with payment processing, user authentication, and inventory management.",
+            "shortDescription": "Modern shopping experience with Next.js and TypeScript",
+            "detailedDescription": "A full-stack e-commerce platform with payment processing, user authentication, and inventory management. The solution provides a seamless shopping experience with features like real-time inventory updates, personalized recommendations, and multi-currency support.",
+            "problemStatement": "Small businesses struggle with expensive e-commerce solutions that lack flexibility and scalability. Most platforms require significant technical knowledge or expensive developers to customize, creating barriers to entry for small merchants.",
+            "responsibilities": [
+                "Frontend architecture using React and Next.js",
+                "Implementing responsive design principles",
+                "Integration with payment gateways",
+                "User experience design and implementation",
+                "Performance optimization"
+            ],
+            "solution": "Built a customizable e-commerce platform that scales with business needs. The solution includes an intuitive admin dashboard, streamlined checkout process, and comprehensive analytics. The platform supports multiple payment methods and shipping integrations while maintaining fast load times and mobile responsiveness.",
+            "outcome": "The platform reduced cart abandonment by 35% and increased mobile conversions by 42%. Merchants reported spending 60% less time on order management and inventory updates compared to previous solutions.",
+            "tags": [
+                "React",
+                "Node.js",
+                "MongoDB",
+                "Stripe"
+            ],
+            "image": "/titleimage.jpg",
+            "link": "#",
+            "liveUrl": "https://ecommerce-demo.dev",
+            "featured": true,
+            "categories": [
+                "Web Development",
+                "E-commerce",
+                "UX Design"
+            ]
+        },
+        {
+            "id": 2,
+            "title": "AI Content Generator",
+            "description": "An AI-powered application that generates marketing content based on user prompts and brand guidelines.",
+            "shortDescription": "AI-powered marketing content creation tool",
+            "detailedDescription": "An AI-powered application that generates marketing content based on user prompts and brand guidelines. The tool helps marketing teams create consistent, on-brand content at scale while reducing production time and costs.",
+            "problemStatement": "Marketing teams struggle to produce high-quality content at scale while maintaining brand consistency. Traditional content creation is time-consuming and expensive, creating bottlenecks in marketing campaigns and digital presence.",
+            "responsibilities": [
+                "AI model integration and fine-tuning",
+                "User interface design and implementation",
+                "Brand guideline parsing algorithm",
+                "Content quality assurance system",
+                "User feedback integration"
+            ],
+            "solution": "Developed an AI content generator that analyzes brand guidelines and creates on-brand marketing materials. The platform includes templates for various content types, tone adjustment capabilities, and a feedback loop to improve content quality over time.",
+            "outcome": "The AI content generator reduced content creation time by 80% and increased content production volume by 300%. Marketing teams reported stronger brand consistency and were able to experiment with more content variations, leading to improved campaign performance.",
+            "tags": [
+                "Next.js",
+                "OpenAI",
+                "TailwindCSS",
+                "Vercel"
+            ],
+            "image": "/titleimage.jpg",
+            "link": "#",
+            "liveUrl": "https://ai-content-demo.dev",
+            "featured": true,
+            "categories": [
+                "AI/ML",
+                "Marketing Tools",
+                "SaaS"
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Real-time Analytics Dashboard",
+            "description": "A real-time dashboard for monitoring business metrics with customizable widgets and data visualization.",
+            "shortDescription": "Real-time data visualization platform",
+            "detailedDescription": "A real-time dashboard for monitoring business metrics with customizable widgets and data visualization. The platform processes millions of data points to provide actionable insights through intuitive charts and reports.",
+            "problemStatement": "Companies struggle to make data-driven decisions due to siloed data sources and complex visualization tools. Existing solutions require technical expertise, making it difficult for non-technical stakeholders to access and interpret critical business metrics.",
+            "responsibilities": [
+                "Data visualization architecture",
+                "Real-time data processing implementation",
+                "Creating customizable dashboard widgets",
+                "Optimizing performance for large datasets",
+                "Implementing user permission systems"
+            ],
+            "solution": "Developed a unified analytics platform that integrates multiple data sources and presents information through intuitive, customizable dashboards. The solution includes automated reporting, anomaly detection, and collaboration features that make data accessible to all stakeholders regardless of technical background.",
+            "outcome": "The dashboard reduced reporting time by 75% and improved decision-making speed by providing real-time insights. Users reported a 40% increase in data-driven decisions and identified new business opportunities through previously hidden patterns.",
+            "tags": [
+                "Vue.js",
+                "Firebase",
+                "D3.js",
+                "WebSockets"
+            ],
+            "image": "/titleimage.jpg",
+            "link": "#",
+            "liveUrl": "https://analytics-demo.dev",
+            "featured": true,
+            "categories": [
+                "Data Visualization",
+                "Business Intelligence",
+                "Frontend Development"
+            ]
+        },
+        {
+            "id": 4,
+            "title": "Mobile Health Tracker",
+            "description": "A cross-platform mobile application for tracking health metrics and providing personalized insights.",
+            "shortDescription": "Cross-platform health tracking mobile app",
+            "detailedDescription": "A cross-platform mobile application for tracking health metrics and providing personalized insights. The app integrates with various health devices and services to provide a comprehensive view of users' health and wellness.",
+            "problemStatement": "People struggle to maintain a holistic view of their health data across different devices and platforms. Most health apps focus on specific metrics but fail to provide meaningful connections between different health indicators.",
+            "responsibilities": [
+                "Cross-platform mobile development",
+                "Health device API integrations",
+                "Machine learning model implementation",
+                "User privacy and data security",
+                "Personalized recommendation engine"
+            ],
+            "solution": "Built a comprehensive health tracking app that centralizes data from various sources and provides personalized insights. The app includes custom goal setting, progress tracking, and AI-powered recommendations based on user patterns and health research.",
+            "outcome": "Users reported a 57% increase in health goal achievement and 42% higher engagement compared to other health apps. The platform's personalized insights helped users identify meaningful health patterns, leading to better lifestyle choices.",
+            "tags": [
+                "React Native",
+                "Firebase",
+                "GraphQL",
+                "TensorFlow Lite"
+            ],
+            "image": "/titleimage.jpg",
+            "link": "#",
+            "liveUrl": "https://portfolio-demo.dev",
+            "featured": false,
+            "categories": [
+                "Mobile Development",
+                "Health Tech",
+                "AI/ML"
+            ]
+        },
+        {
+            "id": 5,
+            "title": "Portfolio Website",
+            "description": "A responsive portfolio website built with Next.js and TailwindCSS showcasing my projects and skills.",
+            "shortDescription": "Personal portfolio website with modern design",
+            "detailedDescription": "A responsive portfolio website built with Next.js and TailwindCSS showcasing my projects and skills. The site features smooth animations, dark mode support, and optimized performance.",
+            "problemStatement": "Creating a portfolio that effectively showcases technical skills while providing an engaging user experience is challenging. Traditional portfolios often lack visual appeal or fail to demonstrate technical capabilities.",
+            "responsibilities": [
+                "Frontend development with Next.js",
+                "Responsive design implementation",
+                "Performance optimization",
+                "Animation and interaction design",
+                "SEO optimization"
+            ],
+            "solution": "Designed and developed a modern portfolio website that highlights projects and skills through an intuitive interface. The site includes interactive project showcases, detailed case studies, and performance metrics to demonstrate technical capabilities.",
+            "outcome": "The portfolio site achieved a 98 Lighthouse performance score and has received positive feedback from recruiters and potential clients. The detailed case studies have led to increased engagement and higher quality project inquiries.",
+            "tags": [
+                "Next.js",
+                "TailwindCSS",
+                "Framer Motion",
+                "Vercel"
+            ],
+            "image": "/titleimage.jpg",
+            "link": "#",
+            "liveUrl": "https://portfolio-demo.dev",
+            "featured": false,
+            "categories": [
+                "Web Development",
+                "Personal Branding",
+                "UI Design"
+            ]
+        }
+    ]
+}
