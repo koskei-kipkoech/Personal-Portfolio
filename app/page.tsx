@@ -22,7 +22,7 @@ export default function Home() {
       <SelectedWork/>
       {/* <ViewAllProjectsButton/> */}
       <Skills/>
-      <Projects/>
+      {/* <Projects/> */}
       <Experience/>
       <Contact/>
       <Footer/>
