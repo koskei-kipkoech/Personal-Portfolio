@@ -7,9 +7,11 @@ function About() {
     <section id="about" className="py-20">
       <div className="container mx-auto px-6">
         <div className="flex flex-col items-center mb-16">
-          <h2 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
+          <h2 className="cursor-pointer text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
             About Me
           </h2>
+          <div className="h-1 w-48 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full"></div>
+
           <p className="text-white/70 text-center max-w-2xl">
             Get to know more about my background, skills, and GitHub contributions.
           </p>
@@ -25,54 +27,22 @@ function About() {
           >
             <h3 className="text-2xl font-semibold">My Journey</h3>
             <p className="text-white/70">
-              I'm a passionate Full Stack Developer with expertise in building modern web applications. With a strong
-              foundation in both frontend and backend technologies, I create seamless, user-friendly experiences that
-              solve real-world problems.
+            I am a passionate and results-driven Software Engineer with a Bachelor’s degree in Computer Science and hands-on training in software development from Moringa School. I specialize in building scalable web applications and optimizing business processes through full-stack development (React, Flask), database management (SQLAlchemy, MongoDB), and automation (web scraping, Docker). 
             </p>
             <p className="text-white/70">
-              My approach combines technical excellence with creative problem-solving. I'm constantly learning and
-              adapting to new technologies to stay at the forefront of web development.
+            I thrive in collaborative environments and am eager to contribute to innovative projects at your company, leveraging my technical expertise to solve real-world challenges while growing my skills in a dynamic and fast-paced environment.
             </p>
             <div className="pt-4">
-              <Button className="rounded-lg px-6 py-2 bg-gradient-to-r from-blue-500 to-purple-500 hover:from-purple-500 hover:to-blue-500 text-white transition-all duration-500">
+              <a 
+                href="/cv/PatrickCV.pdf" 
+                download="PatrickCV.pdf"
+                className="rounded-lg px-6 py-2 bg-gradient-to-r from-blue-500 to-purple-500 
+                          hover:from-purple-500 hover:to-blue-500 text-white transition-all duration-500"
+              >
                 Download Resume
-              </Button>
+              </a>
             </div>
-          </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-            className="bg-zinc-900/50 backdrop-blur-sm rounded-xl p-6 border border-white/5"
-          >
-            <h3 className="text-xl font-semibold mb-6 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
-              Key Skills
-            </h3>
-            <div className="grid grid-cols-2 gap-4">
-              {[
-                { skill: "Frontend Development", level: 90 },
-                { skill: "Backend Development", level: 85 },
-                { skill: "UI/UX Design", level: 75 },
-                { skill: "Database Management", level: 80 },
-                { skill: "DevOps", level: 70 },
-                { skill: "Project Management", level: 75 },
-              ].map((item, index) => (
-                <div key={index} className="bg-zinc-800/50 rounded-lg p-4">
-                  <p className="text-white mb-2">{item.skill}</p>
-                  <div className="w-full bg-zinc-700 rounded-full h-2">
-                    <motion.div
-                      className="h-2 rounded-full bg-gradient-to-r from-blue-500 to-purple-500"
-                      initial={{ width: 0 }}
-                      whileInView={{ width: `${item.level}%` }}
-                      transition={{ duration: 1, delay: 0.1 * index }}
-                      viewport={{ once: true }}
-                    />
-                  </div>
-                </div>
-              ))}
-            </div>
           </motion.div>
         </div>
 
@@ -85,7 +55,7 @@ function About() {
             viewport={{ once: true }}
             className="bg-zinc-900/50 backdrop-blur-sm rounded-xl p-6 border border-white/5"
           >
-            <h3 className="text-xl font-semibold mb-6 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
+            <h3 className="cursor-pointer text-xl font-semibold mb-6 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
               GitHub Trophies
             </h3>
             <div className="flex justify-center overflow-x-auto py-2">
@@ -109,7 +79,7 @@ function About() {
               viewport={{ once: true }}
               className="bg-zinc-900/50 backdrop-blur-sm rounded-xl p-6 border border-white/5"
             >
-              <h3 className="text-xl font-semibold mb-6 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
+              <h3 className="cursor-pointer text-xl font-semibold mb-6 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
                 GitHub Stats
               </h3>
               <div className="flex justify-center overflow-x-auto py-2">
@@ -132,7 +102,7 @@ function About() {
               viewport={{ once: true }}
               className="bg-zinc-900/50 backdrop-blur-sm rounded-xl p-6 border border-white/5"
             >
-              <h3 className="text-xl font-semibold mb-6 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
+              <h3 className="cursor-pointer text-xl font-semibold mb-6 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
                 Contribution Streak
               </h3>
               <div className="flex justify-center overflow-x-auto py-2">
@@ -156,7 +126,7 @@ function About() {
             viewport={{ once: true }}
             className="bg-zinc-900/50 backdrop-blur-sm rounded-xl p-6 border border-white/5"
           >
-            <h3 className="text-xl font-semibold mb-6 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
+            <h3 className="cursor-pointer text-xl font-semibold mb-6 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
               Most Used Languages
             </h3>
             <div className="flex justify-center overflow-x-auto py-2">
@@ -180,7 +150,7 @@ function About() {
           viewport={{ once: true }}
           className="mt-12 bg-zinc-900/50 backdrop-blur-sm rounded-xl p-6 border border-white/5"
         >
-          <h3 className="text-xl font-semibold mb-6 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
+          <h3 className="cursor-pointer text-xl font-semibold mb-6 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
             GitHub Activity
           </h3>
 
