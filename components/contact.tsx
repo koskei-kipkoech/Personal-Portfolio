@@ -38,9 +38,10 @@ function Contact() {
     <section id="contact" className="py-20 bg-zinc-900/30">
       <div className="container mx-auto px-6">
         <div className="flex flex-col items-center mb-16">
-          <h2 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
+          <h2 className="cursor-pointer text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
             Contact
           </h2>
+          <div className="h-1 w-48 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full"></div>
           <p className="text-white/70 text-center max-w-2xl">
             Have a project in mind or want to discuss potential opportunities? Get in touch!
           </p>
