@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { ArrowLeft } from 'lucide-react';
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import { BackgroundPattern } from "@/components/background-patterns";
@@ -59,19 +60,23 @@ export default function Projects() {
       <section className="py-20">
         <div className="container mx-auto px-6">
           <div className="flex flex-col items-center mb-16">
-            <h1 className="text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
+            <h1 className="cursor-pointer text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
               All Projects
             </h1>
             <p className="text-white/70 text-center max-w-2xl mb-8">
               An extensive collection of my work across different technologies and industries.
             </p>
-            <Link href="/" className="mb-12">
-              <Button variant="outline" className="border border-white/10 hover:bg-white/5">
+            <Link href="/" className="mb-12 relative group inline-block">
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg opacity-75 group-hover:opacity-100 transition duration-300 animate-spin-slow"></div>
+              <Button 
+                variant="outline" 
+                className="relative px-6 py-2 bg-background text-foreground border-0 rounded-lg font-medium group-hover:bg-background/80 transition duration-300 flex items-center gap-2"
+              >
+                <ArrowLeft size={16} />
                 Back to Home
               </Button>
             </Link>
           </div>
-
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
               <motion.div
@@ -92,7 +97,7 @@ export default function Projects() {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-500 group-hover:to-purple-500 transition-all duration-300">
+                  <h3 className="cursor-pointer text-xl font-semibold mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-500 group-hover:to-purple-500 transition-all duration-300">
                     {project.title}
                   </h3>
                   <p className="text-white/70 mb-4 text-sm">{project.description}</p>
