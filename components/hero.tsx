@@ -78,21 +78,18 @@ function Hero() {
                 <Code size={20} className="text-blue-400" />
                 <span className="font-semibold text-white">Full-Stack Development</span>
               </div>
-              <p className="pl-7">React, Flask</p>
 
               {/* Database Management */}
               <div className="flex items-center gap-2">
                 <Database size={20} className="text-green-400" />
                 <span className="font-semibold text-white">Database Management</span>
               </div>
-              <p className="pl-7">SQLAlchemy, MongoDB, PostgreSQL</p>
 
               {/* Automation */}
               <div className="flex items-center gap-2">
                 <Settings size={20} className="text-yellow-400" />
                 <span className="font-semibold text-white">Automation</span>
               </div>
-              <p className="pl-7">Docker, Web Scraping</p>
             </div>
 
             <div className="flex items-center gap-3">
