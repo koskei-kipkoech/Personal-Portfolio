@@ -26,6 +26,7 @@ interface Project {
   url?: string;
   liveUrl?: string;
   githubUrl?: string;
+  giturl?: string; // Added to handle the alternative property name
   featured: boolean;
   categories?: string[];
   mvpFeatures?: {
@@ -41,6 +42,9 @@ interface ProjectModalProps {
 }
 
 export const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
+  // Use githubUrl if available, otherwise use giturl if available
+  const repoUrl = project.githubUrl || project.giturl;
+
   useEffect(() => {
     if (isOpen) {
       document.body.classList.add("overflow-hidden");
@@ -215,9 +219,9 @@ export const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) =>
                     </a>
                   )}
                   
-                  {project.githubUrl && (
+                  {repoUrl && (
                     <a 
-                      href={project.githubUrl} 
+                      href={repoUrl} 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="px-4 py-2 bg-slate-700 hover:bg-slate-600 text-white rounded-lg transition-colors"
