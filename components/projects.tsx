@@ -10,14 +10,32 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import { BackgroundPattern } from "@/components/background-patterns";
 
+interface Technology {
+  name: string;
+  icon: string;
+}
+
 interface Project {
   id: number;
   title: string;
   description: string;
-  tags: string[];
+  shortDescription?: string;
+  detailedDescription?: string;
+  problemStatement?: string;
+  responsibilities?: string[];
+  solution?: string;
+  outcome?: string;
   image: string;
-  link: string;
+  technologies: Technology[];
+  url?: string;
+  liveUrl?: string;
+  githubUrl?: string;
   featured: boolean;
+  categories: string[];
+  mvpFeatures?: {
+    timeline: string;
+    features: string[];
+  };
 }
 
 export default function Projects() {
@@ -25,18 +43,25 @@ export default function Projects() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Load all projects from db.json
-    import('../public/db.json')
+    fetch('/db.json')
+      .then((response) => response.json())
       .then((data) => {
-        setProjects(data.allProjects);
+        if (data && Array.isArray(data.allProjects)) {
+          setProjects(data.allProjects);
+        } else {
+          console.warn('No projects found in data');
+          setProjects([]);
+        }
         setLoading(false);
       })
       .catch((error) => {
         console.error('Error loading projects:', error);
+        setProjects([]);
         setLoading(false);
       });
   }, []);
 
+  // Add a check for empty projects array
   if (loading) {
     return (
       <main className="min-h-screen bg-black text-white">
@@ -45,6 +70,21 @@ export default function Projects() {
         <section className="py-20">
           <div className="container mx-auto px-6 text-center">
             <p>Loading projects...</p>
+          </div>
+        </section>
+        <Footer />
+      </main>
+    );
+  }
+
+  if (!projects || projects.length === 0) {
+    return (
+      <main className="min-h-screen bg-black text-white">
+        <BackgroundPattern />
+        <Navbar />
+        <section className="py-20">
+          <div className="container mx-auto px-6 text-center">
+            <p>No projects found.</p>
           </div>
         </section>
         <Footer />
@@ -100,33 +140,44 @@ export default function Projects() {
                   <h3 className="cursor-pointer text-xl font-semibold mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-500 group-hover:to-purple-500 transition-all duration-300">
                     {project.title}
                   </h3>
-                  <p className="text-white/70 mb-4 text-sm">{project.description}</p>
+                  <p className="text-white/70 mb-4 text-sm">{project.shortDescription || project.description}</p>
                   <div className="flex flex-wrap gap-2 mb-4">
-                    {project.tags.map((tag) => (
-                      <span key={tag} className="text-xs px-2 py-1 rounded-full bg-white/5 text-white/70">
-                        {tag}
+                    {project.categories.map((category) => (
+                      <span key={category} className="text-xs px-2 py-1 rounded-full bg-white/5 text-white/70">
+                        {category}
                       </span>
                     ))}
+                  </div>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {project.technologies.slice(0, 4).map((tech, idx) => (
+                      <span key={idx} className="text-xs px-2 py-1 rounded-full bg-white/10 text-white/80">
+                        {tech.icon} {tech.name}
+                      </span>
+                    ))}
+                    {project.technologies.length > 4 && (
+                      <span className="text-xs px-2 py-1 rounded-full bg-white/10 text-white/80">
+                        +{project.technologies.length - 4}
+                      </span>
+                    )}
                   </div>
                   <Link href={`/projects/${project.id}`} className="inline-flex items-center text-sm text-blue-400 hover:text-blue-300">
                     View Project
                     <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-4 w-4 ml-1"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-4 w-4 ml-1"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
                     >
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                     </svg>
-                    </Link>
+                  </Link>
                 </div>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
-      
       
       <Footer />
     </main>
