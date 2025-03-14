@@ -8,8 +8,8 @@ const skillCategories = [
     name: "Programming Languages",
     skills: [
       { name: "JavaScript", level: 90 },
-      { name: "Python", level: 85 },
-      { name: "C#", level: 78 },
+      { name: "Python", level: 89 },
+      { name: "C#", level: 68 },
       { name: "SQL", level: 88 },
       { name: "TypeScript", level: 82 },
     ],
@@ -19,7 +19,7 @@ const skillCategories = [
     skills: [
       { name: "React", level: 90 },
       { name: "HTML", level: 95 },
-      { name: "CSS", level: 88 },
+      { name: "CSS", level: 96 },
       { name: "Tailwind CSS", level: 92 },
       { name: "Responsive UI Design", level: 88 },
     ],
@@ -29,7 +29,7 @@ const skillCategories = [
     skills: [
       { name: "Flask", level: 85 },
       { name: "SQLAlchemy", level: 80 },
-      { name: "Node.js", level: 78 },
+      { name: "Alembic", level: 78 },
       { name: "Express", level: 75 },
     ],
   },
@@ -37,8 +37,8 @@ const skillCategories = [
     name: "Database Management",
     skills: [
       { name: "MongoDB", level: 85 },
-      { name: "PostgreSQL", level: 80 },
-      { name: "SQLite", level: 88 },
+      { name: "PostgreSQL", level: 87 },
+      { name: "SQLite", level: 93 },
       { name: "SQL", level: 90 },
     ],
   },
@@ -59,18 +59,32 @@ const skillCategories = [
       { name: "Communication", level: 95 },
       { name: "Problem Solving", level: 92 },
       { name: "Team Collaboration", level: 90 },
-      { name: "Adaptability", level: 88 },
-      { name: "Time Management", level: 85 },
+      { name: "Adaptability", level: 92 },
+      { name: "Time Management", level: 95 },
     ],
   },
 ]
 
+import { Beaker, Code, Database, FileJson, Pencil, Map, Cloud, Clock, Box, GitBranch, Settings, PenTool, Microscope, TestTube, Users } from "lucide-react"
+
 // Additional skills for the badge display
 const additionalSkills = [
-  "React", "Python", "JavaScript", "Flask", "MongoDB", 
-  "PostgreSQL", "Docker", "GitHub", "Tailwind CSS", "C#",
-  "API Integration", "Web Scraping", "Jest", "PyTest",
-  "Mocha", "React Testing Library", "Agile Methodologies"
+  { name: "Jest", icon: <Beaker size={16} /> },
+  { name: "PyTest", icon: <TestTube size={16} /> },
+  { name: "Mocha", icon: <Beaker size={16} /> },
+  { name: "DbDiagram", icon: <Database size={16} /> },
+  { name: "Excalidraw", icon: <PenTool size={16} /> },
+  { name: "Leaflet", icon: <Map size={16} /> },
+  { name: "Netlify", icon: <Cloud size={16} /> },
+  { name: "Database Scheduler", icon: <Clock size={16} /> },
+  { name: "Superbase", icon: <Database size={16} /> },
+  { name: "Prisma", icon: <Box size={16} /> },
+  { name: "Trae", icon: <Code size={16} /> },
+  { name: "Jenkins", icon: <Settings size={16} /> },
+  { name: "Angular", icon: <Code size={16} /> },
+  { name: "Web Scraping", icon: <Microscope size={16} /> },
+  { name: "React Testing Library", icon: <Beaker size={16} /> },
+  { name: "Agile Methodologies", icon: <Users size={16} /> }
 ]
 
 function Skills() {
@@ -148,15 +162,16 @@ function Skills() {
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
             {additionalSkills.map((tech, index) => (
               <motion.div
-                key={tech}
+                key={tech.name}
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.3, delay: index * 0.05 }}
                 viewport={{ once: true }}
                 whileHover={{ y: -5, scale: 1.03 }}
-                className="bg-zinc-900/30 backdrop-blur-sm rounded-lg p-4 flex items-center justify-center border border-white/5 hover:border-blue-500/50 transition-all duration-300"
+                className="bg-zinc-900/30 backdrop-blur-sm rounded-lg p-4 flex items-center justify-center gap-2 border border-white/5 hover:border-blue-500/50 transition-all duration-300"
               >
-                <span className="text-white/80 text-sm md:text-base">{tech}</span>
+                <span className="text-white/60">{tech.icon}</span>
+                <span className="text-white/80 text-sm md:text-base">{tech.name}</span>
               </motion.div>
             ))}
           </div>
