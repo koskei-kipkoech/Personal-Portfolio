@@ -6,6 +6,7 @@ import { ViewAllProjectsButton } from "./view-all";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { ProjectModal } from "./projectmodal";
+import { BackgroundLines } from "@/components/ui/background-lines";
 
 interface Technology {
   name: string;
@@ -173,77 +174,45 @@ export function SelectedWork() {
   }
 
   return (
-    <motion.section 
-      ref={sectionRef}
-      id="projects" 
-      className="py-20 bg-zinc-900/30 relative overflow-hidden"
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 0.8 }}
-      viewport={{ once: true }}
-    >
-      {/* Animated background elements */}
-      {[...Array(6)].map((_, i) => (
-        <motion.div
-          key={i}
-          className="absolute rounded-full bg-indigo-600/10 blur-3xl"
-          animate={{
-            x: [Math.random() * 100, Math.random() * -100],
-            y: [Math.random() * 100, Math.random() * -100],
-            scale: [1, 1.5, 1],
-            opacity: [0.1, 0.2, 0.1],
-          }}
-          transition={{
-            duration: 15 + i * 2,
-            repeat: Infinity,
-            repeatType: "reverse",
-          }}
-          style={{
-            left: `${Math.random() * 100}%`,
-            top: `${Math.random() * 100}%`,
-            width: `${100 + Math.random() * 200}px`,
-            height: `${100 + Math.random() * 200}px`,
-          }}
-        />
-      ))}
-
-      <div className="container px-4 mx-auto relative z-10">
-        <motion.div 
-          className="flex flex-col items-center mb-16"
-          initial={{ y: 50, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-        >
-          <h2 className="cursor-pointer text-4xl md:text-5xl font-bold text-center mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">Selected Projects</h2>
-          <div className="h-1 w-48 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full"></div>
-          <p className="mt-4 text-gray-300 max-w-lg text-center">Check out some of my favorite works and creative experiments</p>
-        </motion.div>
+    <BackgroundLines>
+      <motion.section 
+        ref={sectionRef}
+        id="projects" 
+        className="py-20 relative overflow-hidden"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
+        {/* Remove or keep the existing animated background elements based on preference */}
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.slice(0, 3).map((project, index) => (
-            <motion.div
-              key={project.id}
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              viewport={{ once: true }}
-            >
-              <ProjectCard project={project} />
-            </motion.div>
-          ))}
-        </div>
-
-        <motion.div 
-          className="mt-16 flex justify-center"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.5 }}
-          viewport={{ once: true }}
-        >
-          <ViewAllProjectsButton />
-        </motion.div>
-      </div>
-    </motion.section>
+        <div className="container mx-auto px-4 relative z-10"></div>
+          <motion.div 
+            className="flex flex-col items-center mb-16"
+            initial={{ y: 50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="cursor-pointer text-4xl md:text-5xl font-bold text-center mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">Selected Projects</h2>
+            <div className="h-1 w-48 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full"></div>
+            <p className="mt-4 text-gray-300 max-w-lg text-center">Check out some of my favorite works and creative experiments</p>
+          </motion.div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {projects.slice(0, 3).map((project, index) => (
+              <motion.div
+                key={project.id}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
+              >
+                <ProjectCard project={project} />
+              </motion.div>
+            ))}
+          </div>
+      </motion.section>
+    </BackgroundLines>
   );
 }
