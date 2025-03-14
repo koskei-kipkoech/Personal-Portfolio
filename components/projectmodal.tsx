@@ -28,6 +28,10 @@ interface Project {
   githubUrl?: string;
   featured: boolean;
   categories?: string[];
+  mvpFeatures?: {
+    timeline?: string;
+    features: string[];
+  };
 }
 
 interface ProjectModalProps {
@@ -132,6 +136,20 @@ export const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) =>
                     <div className="mb-6">
                       <h3 className="text-lg font-medium text-indigo-400 mb-2">Solution</h3>
                       <p className="text-slate-300">{project.solution}</p>
+                    </div>
+                  )}
+                  
+                  {/* MVP Features */}
+                  {project.mvpFeatures && project.mvpFeatures.features.length > 0 && (
+                    <div className="mb-6">
+                      <h3 className="text-lg font-medium text-indigo-400 mb-2">
+                        MVP Features {project.mvpFeatures.timeline && `(${project.mvpFeatures.timeline})`}
+                      </h3>
+                      <ul className="list-disc list-inside text-slate-300 space-y-1">
+                        {project.mvpFeatures.features.map((feature, index) => (
+                          <li key={index}>{feature}</li>
+                        ))}
+                      </ul>
                     </div>
                   )}
                   
