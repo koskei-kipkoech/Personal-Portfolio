@@ -17,20 +17,21 @@ function About() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-start mb-16">
+        {/* Updated journey section - centered on all screen sizes */}
+        <div className="flex justify-center mb-16">
           <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
-            className="space-y-6"
+            className="space-y-6 max-w-3xl text-center"
           >
             <h3 className="text-2xl font-semibold">My Journey</h3>
+            <h4 className="text-white/70">
+              I am a passionate and results-driven Software Engineer with a Bachelor's degree in Computer Science and hands-on training in software development from Moringa School. I specialize in building scalable web applications and optimizing business processes through full-stack development (React, Flask), database management (SQLAlchemy, MongoDB), and automation (web scraping, Docker). 
+            </h4>
             <p className="text-white/70">
-            I am a passionate and results-driven Software Engineer with a Bachelor’s degree in Computer Science and hands-on training in software development from Moringa School. I specialize in building scalable web applications and optimizing business processes through full-stack development (React, Flask), database management (SQLAlchemy, MongoDB), and automation (web scraping, Docker). 
-            </p>
-            <p className="text-white/70">
-            I thrive in collaborative environments and am eager to contribute to innovative projects at your company, leveraging my technical expertise to solve real-world challenges while growing my skills in a dynamic and fast-paced environment.
+              I thrive in collaborative environments and am eager to contribute to innovative projects at your company, leveraging my technical expertise to solve real-world challenges while growing my skills in a dynamic and fast-paced environment.
             </p>
             <div className="pt-4">
               <a 
@@ -42,7 +43,6 @@ function About() {
                 Download Resume
               </a>
             </div>
-
           </motion.div>
         </div>
 
@@ -157,14 +157,14 @@ function About() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-zinc-800/50 rounded-lg p-4 flex flex-col items-center">
               <div className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500 mb-2">
-                500+
+                200+
               </div>
               <p className="text-white/70 text-center">Contributions</p>
             </div>
 
             <div className="bg-zinc-800/50 rounded-lg p-4 flex flex-col items-center">
               <div className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500 mb-2">
-                25+
+                100+
               </div>
               <p className="text-white/70 text-center">Repositories</p>
             </div>
@@ -208,4 +208,3 @@ function About() {
 }
 
 export default About
-

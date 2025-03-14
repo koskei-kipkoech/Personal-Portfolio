@@ -53,9 +53,14 @@
   * {
     @apply border-border;
   }
+  
   body {
-    @apply bg-background text-foreground;
+    @apply text-foreground;
+    /* Remove the forced black background */
+    min-height: 100vh;
+    overflow-x: hidden;
   }
+  
   html {
     scroll-behavior: smooth;
   }
@@ -92,4 +97,3 @@
     }
   }
 }
-

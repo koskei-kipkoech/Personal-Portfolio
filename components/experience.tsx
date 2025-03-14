@@ -5,31 +5,21 @@ import { motion } from "framer-motion"
 const experiences = [
   {
     id: 1,
-    role: "Senior Frontend Developer",
-    company: "TechCorp Inc.",
-    period: "2021 - Present",
-    description:
-      "Led the development of the company's flagship SaaS product, improving performance by 40%. Mentored junior developers and implemented modern frontend practices.",
-    technologies: ["React", "TypeScript", "Redux", "GraphQL"],
+    role: "Software Developer Intern",
+    company: "The Micropoint System LTd",
+    period: "June 2022 - September 2022",
+    description: "Developed a COVID-19 tracking application using C#. Worked closely with a team to enhance application performance and security. Assisted in database management and system automation tasks.",
+    technologies: ["C#", ".NET", "MySQL", "Azure"]
   },
   {
-    id: 2,
-    role: "Full Stack Developer",
-    company: "InnovateSoft",
-    period: "2019 - 2021",
-    description:
-      "Developed and maintained multiple client projects. Implemented CI/CD pipelines and improved code quality through automated testing.",
-    technologies: ["Node.js", "Express", "MongoDB", "React"],
+    "id": 2,
+    "role": "Organizing Secretary",
+    "company": "Chesoen Ward Comrade Group (CBO)",
+    "period": "Dec 2023 - Present",
+    "description": "Spearhead event planning and execution, ensuring smooth coordination of all activities. Oversee zonal representatives to streamline communication and operations. Maintain accurate meeting records and minutes to ensure organizational transparency. Chair the tent committee, managing logistics for major events. Provide timely updates to comrades on key events in the organization's calendar. Contributed  in designing the organization's first web platform, enhancing digital accessibility.",
+    "technologies": ["Google Calender", "Docs", "Excel", "Excalidraw"]
   },
-  {
-    id: 3,
-    role: "Junior Web Developer",
-    company: "WebSolutions",
-    period: "2017 - 2019",
-    description:
-      "Built responsive websites and web applications for various clients. Collaborated with designers to implement pixel-perfect UIs.",
-    technologies: ["JavaScript", "HTML/CSS", "jQuery", "PHP"],
-  },
+  
 ]
 
 function Experience() {

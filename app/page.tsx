@@ -3,6 +3,7 @@
 import About from "@/components/about"
 import { BackgroundPattern } from "@/components/background-patterns"
 import Contact from "@/components/contact"
+import Education from "@/components/education"
 import Experience from "@/components/experience"
 import Footer from "@/components/footer"
 import Hero from "@/components/hero"
@@ -24,6 +25,7 @@ export default function Home() {
       <Skills/>
       {/* <Projects/> */}
       <Experience/>
+      <Education/>
       <Contact/>
       <Footer/>
     </main>
