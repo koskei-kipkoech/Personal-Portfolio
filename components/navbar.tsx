@@ -2,7 +2,7 @@
 
 import type React from "react"
 import { useState, useEffect } from "react"
-import { Menu, X, User, Briefcase, Code, Award, Mail } from "lucide-react"
+import { Menu, X, User, Briefcase, Code, Award, Mail, GraduationCap } from "lucide-react"
 import Link from "next/link"
 
 function Navbar() {
@@ -46,7 +46,10 @@ function Navbar() {
     { name: "Projects", icon: <Briefcase size={18} /> },
     { name: "Skills", icon: <Code size={18} /> },
     { name: "Experience", icon: <Award size={18} /> },
+    { name: "Education", icon: <GraduationCap size={18} /> },
     { name: "Contact", icon: <Mail size={18} /> }
+
+
   ]
 
   return (
