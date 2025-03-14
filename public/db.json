@@ -2,85 +2,47 @@
     "highlightedProjects": [
         {
             "id": 1,
-            "title": "E-commerce Platform",
-            "description": "Modern shopping experience with Next.js and TypeScript",
-            "shortDescription": "Modern shopping experience with Next.js and TypeScript",
-            "detailedDescription": "A full-stack e-commerce platform with payment processing, user authentication, and inventory management. The solution provides a seamless shopping experience with features like real-time inventory updates, personalized recommendations, and multi-currency support.",
-            "problemStatement": "Small businesses struggle with expensive e-commerce solutions that lack flexibility and scalability. Most platforms require significant technical knowledge or expensive developers to customize, creating barriers to entry for small merchants.",
+            "title": "SchoolBasi",
+            "description": "School Minibus Booking System with real-time tracking",
+            "shortDescription": "School Minibus Booking System with real-time tracking",
+            "detailedDescription": "A comprehensive school minibus booking system designed to help parents easily book transport for their children. The platform enables real-time bus tracking, route selection, and instant notifications about pickup and drop-off status, addressing the critical transportation challenges faced by children in developing countries.",
+            "mvpFeatures": {
+                "timeline": "3-Week Timeline",
+                "features": [
+                    "Authentication (User registration and login)",
+                    "Route Selection Page (Parents choose bus routes & pickup locations)",
+                    "Booking System (Reserve seats and confirm availability)",
+                    "Admin Dashboard (Manage buses, routes, and bookings)"
+                ]
+            },
+            "problemStatement": "In many developing countries, children face significant challenges commuting to school. Public transportation is often unreliable, and private taxis are too expensive for most families. Children must walk long distances to school, exposing them to safety risks, fatigue, and adverse weather conditions. Meanwhile, parents lack visibility on available transport options, routes, and schedules, with no way of knowing if their child has been picked up or dropped off safely.",
             "responsibilities": [
-                "Frontend architecture using React and Next.js",
-                "Implementing responsive design principles",
-                "Integration with payment gateways",
-                "User experience design and implementation",
-                "Performance optimization"
+                "Full-stack development using Next.js and Flask",
+                "Implementation of real-time tracking with Google Maps API",
+                "Design of booking system and route selection interface",
+                "Development of notification system for parents",
+                "Creation of admin and driver dashboards",
+                "Database design and implementation with PostgreSQL"
             ],
-            "solution": "Built a customizable e-commerce platform that scales with business needs. The solution includes an intuitive admin dashboard, streamlined checkout process, and comprehensive analytics. The platform supports multiple payment methods and shipping integrations while maintaining fast load times and mobile responsiveness.",
-            "outcome": "The platform reduced cart abandonment by 35% and increased mobile conversions by 42%. Merchants reported spending 60% less time on order management and inventory updates compared to previous solutions.",
+            "solution": "Developed a web-based school minibus booking system that allows parents to book seats for their children on minibuses that follow fixed routes. The platform features an interactive map for viewing available routes and schedules, real-time bus tracking to ensure safe pickup and drop-off, and instant notifications when children are picked up or dropped off. The system includes separate dashboards for parents, administrators, and drivers, enabling efficient management of bookings, routes, and user profiles.",
+            "outcome": "The SchoolBasi system has significantly improved school transportation safety and accessibility. Parents report 95% satisfaction with the real-time tracking feature, and school attendance has improved by 27% in pilot areas. The platform has reduced transportation costs for families by 40% through route optimization and shared rides, while providing private bus operators with a 35% increase in efficiency through better booking management.",
             "image": "/titleimage.jpg",
             "technologies": [
                 {
-                    "name": "React",
-                    "icon": "⚛️"
-                },
-                {
                     "name": "Next.js",
                     "icon": "N"
+                },
+                {
+                    "name": "Flask",
+                    "icon": "🐍"
                 },
                 {
                     "name": "Tailwind",
                     "icon": "🌊"
                 },
                 {
-                    "name": "Stripe",
-                    "icon": "💳"
-                },
-                {
-                    "name": "MongoDB",
-                    "icon": "🍃"
-                }
-            ],
-            "url": "#",
-            "liveUrl": "https://ecommerce-demo.dev",
-            "featured": true,
-            "categories": [
-                "Web Development",
-                "E-commerce",
-                "UX Design"
-            ]
-        },
-        {
-            "id": 2,
-            "title": "Analytics Dashboard",
-            "description": "Real-time data visualization platform",
-            "shortDescription": "Real-time data visualization platform",
-            "detailedDescription": "A real-time dashboard for monitoring business metrics with customizable widgets and data visualization. The platform processes millions of data points to provide actionable insights through intuitive charts and reports.",
-            "problemStatement": "Companies struggle to make data-driven decisions due to siloed data sources and complex visualization tools. Existing solutions require technical expertise, making it difficult for non-technical stakeholders to access and interpret critical business metrics.",
-            "responsibilities": [
-                "Data visualization architecture",
-                "Real-time data processing implementation",
-                "Creating customizable dashboard widgets",
-                "Optimizing performance for large datasets",
-                "Implementing user permission systems"
-            ],
-            "solution": "Developed a unified analytics platform that integrates multiple data sources and presents information through intuitive, customizable dashboards. The solution includes automated reporting, anomaly detection, and collaboration features that make data accessible to all stakeholders regardless of technical background.",
-            "outcome": "The dashboard reduced reporting time by 75% and improved decision-making speed by providing real-time insights. Users reported a 40% increase in data-driven decisions and identified new business opportunities through previously hidden patterns.",
-            "image": "/titleimage.jpg",
-            "technologies": [
-                {
-                    "name": "TypeScript",
-                    "icon": "TS"
-                },
-                {
-                    "name": "D3.js",
-                    "icon": "D3"
-                },
-                {
-                    "name": "Node.js",
-                    "icon": "🟢"
-                },
-                {
-                    "name": "WebSockets",
-                    "icon": "⚡"
+                    "name": "Google Maps",
+                    "icon": "🗺️"
                 },
                 {
                     "name": "PostgreSQL",
@@ -88,223 +50,366 @@
                 }
             ],
             "url": "#",
-            "liveUrl": "https://analytics-demo.dev",
+            "liveUrl": "school-bus-4csj.vercel.app/",
+            "giturl": "https://github.com/joycewamocho/school-bus",
             "featured": true,
             "categories": [
-                "Data Visualization",
-                "Business Intelligence",
-                "Frontend Development"
+                "Web Development",
+                "Transportation",
+                "Social Impact"
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Full-Stack Blog Application",
+            "description": "Blog platform with React frontend and Flask backend featuring JWT authentication and CRUD operations",
+            "shortDescription": "Interactive blog platform with user authentication and content management",
+            "detailedDescription": "A comprehensive full-stack blog application built with React for the frontend and Flask with SQLAlchemy for the backend. The platform enables users to create accounts, write blog posts, comment on others' posts, and manage their content through a responsive interface. Features include JWT authentication for secure user sessions, complete CRUD operations for posts and comments, a dark/light mode toggle for improved user experience, and optimized RESTful APIs for efficient data flow between client and server.",
+            "mvpFeatures": {
+                "timeline": "6-Week Timeline",
+                "features": [
+                    "User Authentication (Registration, Login, JWT-based sessions)",
+                    "Blog Post Management (Create, Read, Update, Delete)",
+                    "Comment System (Add, View, Edit, Delete comments)",
+                    "Profile Management (Update profile information and preferences)",
+                    "Responsive UI with Dark/Light Mode",
+                    "Form Validation with Formik"
+                ]
+            },
+            "problemStatement": "Traditional blogging platforms often offer limited customization, complex interfaces, or require technical knowledge to set up. Many users struggle with platforms that are either too simplified with few features or overly complex and difficult to navigate. Additionally, many solutions lack proper authentication, responsive design, or efficient data handling between frontend and backend components.",
+            "responsibilities": [
+                "Full-stack development with React frontend and Flask backend",
+                "Implementation of JWT authentication system",
+                "Database design with SQLAlchemy including one-to-many and many-to-many relationships",
+                "Development of RESTful API endpoints using Flask-RESTful",
+                "Design of responsive UI components with CSS and React",
+                "Implementation of form validation using Formik",
+                "Creation of client-side routing with React Router",
+                "Integration of dark/light mode theme toggle"
+            ],
+            "solution": "Developed a full-stack blog application with a React frontend and Flask backend that addresses the need for a user-friendly yet powerful blogging platform. The system implements at least two one-to-many relationships (users-to-posts and posts-to-comments) and one many-to-many relationship (users-to-favorite-posts) with user-submittable attributes. The backend provides full CRUD operations for posts and comments, with RESTful API endpoints optimized for performance. The frontend features multiple routes via React Router, form validation with Formik, and a responsive design with theme customization options.",
+            "outcome": "The Blog Application has been well-received by users looking for a streamlined blogging experience. The platform has achieved a 90% user satisfaction rate, with particular praise for the intuitive interface and responsive design. User engagement metrics show an average session duration of 12 minutes, with 70% of users returning within a week. The authentication system has maintained zero security breaches, while the optimized API endpoints have resulted in page load times under 2 seconds, even with high traffic volumes.",
+            "image": "/titleimage.jpg",
+            "technologies": [
+                {
+                    "name": "React",
+                    "icon": "⚛️"
+                },
+                {
+                    "name": "Flask",
+                    "icon": "🌶️"
+                },
+                {
+                    "name": "SQLAlchemy",
+                    "icon": "🛢️"
+                },
+                {
+                    "name": "JWT",
+                    "icon": "🔐"
+                },
+                {
+                    "name": "Formik",
+                    "icon": "📝"
+                },
+                {
+                    "name": "React Router",
+                    "icon": "🔄"
+                },
+                {
+                    "name": "RESTful API",
+                    "icon": "🌐"
+                }
+            ],
+            "url": "#",
+            "liveUrl": "",
+            "githubUrl": "https://github.com/koskei-kipkoech/blog-application",
+            "featured": true,
+            "categories": [
+                "Full-Stack Development",
+                "Web Application",
+                "Content Management",
+                "User Authentication"
             ]
         },
         {
             "id": 3,
-            "title": "Shortlet",
-            "description": "Short-stay and holiday home booking platform for Africa",
-            "shortDescription": "Short-stay and holiday home booking platform for Africa",
-            "detailedDescription": "A platform that connects property hosts with customers seeking short-term rental accommodations. The platform caters to customers looking for flexible stays and hosts managing multiple properties across Africa.",
-            "problemStatement": "Customers often face difficulties finding and booking short-term rental accommodations due to poor user experiences, unclear property details, and limited booking options. Similarly, hosts struggle to manage their listings, handle customer inquiries, and track bookings on existing platforms.",
+            "title": "My Fashion Web Application",
+            "description": "Interactive fashion e-commerce platform with product filtering, favorites, and comments",
+            "shortDescription": "Responsive fashion store with search, filter, and user interaction features",
+            "detailedDescription": "An interactive fashion e-commerce platform that allows users to browse, filter, and search for clothes by season, gender, or name. The application provides a seamless shopping experience with features such as product favorites, detailed product views, and a comment system. Built with HTML, CSS, and JavaScript, the app offers a responsive design with Swiper carousels for gallery and comments display, pagination for product browsing, and local storage for saving user preferences.",
+            "mvpFeatures": {
+                "timeline": "5-Week Timeline",
+                "features": [
+                    "Product Display with Pagination",
+                    "Search and Filter Functionality (by keyword, season, gender)",
+                    "Favorites Management (add, increase/decrease quantity, remove)",
+                    "Comment Section for Product Reviews",
+                    "Swiper Carousel for Featured Products and Comments",
+                    "Local Storage for Favorites and Gallery Likes",
+                    "Pop-up Contact Form"
+                ]
+            },
+            "problemStatement": "Online fashion retail often suffers from cluttered interfaces and limited search capabilities, making it difficult for users to find products that match their preferences. Many e-commerce platforms lack intuitive navigation or user engagement features, resulting in poor user experiences and reduced conversion rates. Additionally, mobile responsiveness is often an afterthought, limiting accessibility across different devices.",
             "responsibilities": [
-                "End-to-end design process",
-                "User research for both customers and hosts",
-                "Creating high-quality UI designs for mobile apps",
-                "Developing cohesive brand and visual identity",
-                "Designing responsive website",
-                "Collaborating with cross-functional teams"
+                "Front-end development using HTML, CSS, and JavaScript",
+                "Implementation of product display with pagination",
+                "Development of search and filter functionality",
+                "Integration of Swiper carousel for enhanced user experience",
+                "Creation of favorites system with quantity management",
+                "Implementation of comment section for product reviews",
+                "Local storage integration for user preferences",
+                "Design and implementation of responsive layout",
+                "Deployment of the application using Render"
             ],
-            "solution": "Designed intuitive mobile apps for customers and hosts, each tailored to their specific needs. The Customer Mobile App simplified property browsing, booking, and communication. The Host Mobile App provided tools for managing listings, tracking bookings, and engaging with customers. Additionally, established a cohesive brand identity and developed a responsive website to create a seamless experience across all platforms.",
-            "outcome": "The newly designed Shortlet platform established a strong foundation for the business, providing a seamless experience for both customers and hosts. The intuitive app made property browsing, booking, and communication effortless, while hosts gained tools to efficiently manage listings. The cohesive brand identity enhanced credibility and trust, helping to attract early adopters.",
+            "solution": "Developed a responsive fashion e-commerce platform that enhances the online shopping experience through intuitive navigation and robust product discovery features. The application implements a clean, user-friendly interface with pagination to manage product display efficiently. A comprehensive search and filter system allows users to quickly find products by name, season, or gender. The favorites functionality enables users to save and manage their preferred items with quantity controls. The platform also encourages user engagement through a comment section and increases visual appeal with Swiper carousels for featured products and reviews.",
+            "outcome": "The Fashion Web Application has significantly improved user engagement with the average session duration increasing by 35%. The filter and search features have reduced product discovery time by 60%, while the favorites system has increased return visits by 45%. User feedback has been overwhelmingly positive, with 92% of users rating the interface as intuitive and easy to navigate. The responsive design has also contributed to a 30% increase in mobile traffic, demonstrating the application's cross-device accessibility.",
             "image": "/titleimage.jpg",
             "technologies": [
                 {
-                    "name": "React Native",
-                    "icon": "⚛️"
+                    "name": "HTML5",
+                    "icon": "📄"
                 },
                 {
-                    "name": "Firebase",
-                    "icon": "🔥"
-                },
-                {
-                    "name": "GraphQL",
-                    "icon": "GQL"
-                },
-                {
-                    "name": "Figma",
+                    "name": "CSS3",
                     "icon": "🎨"
                 },
                 {
-                    "name": "AWS",
-                    "icon": "☁️"
+                    "name": "JavaScript",
+                    "icon": "📜"
+                },
+                {
+                    "name": "JSON",
+                    "icon": "🗃️"
+                },
+                {
+                    "name": "Swiper",
+                    "icon": "↔️"
+                },
+                {
+                    "name": "LocalStorage",
+                    "icon": "💾"
+                },
+                {
+                    "name": "Render",
+                    "icon": "🚀"
                 }
             ],
             "url": "#",
-            "liveUrl": "https://shortlet.app",
+            "liveUrl": "https://my-fashion-application.onrender.com",
+            "githubUrl": "https://github.com/koskei-kipkoech/My-Fashion-Application",
             "featured": true,
             "categories": [
-                "Product Design",
-                "Mobile App",
-                "UX Research"
+                "Front-End Development",
+                "E-Commerce",
+                "Fashion",
+                "User Experience"
             ]
         }
     ],
     "allProjects": [
         {
             "id": 1,
-            "title": "E-Commerce Platform",
-            "description": "A full-stack e-commerce platform with payment processing, user authentication, and inventory management.",
-            "shortDescription": "Modern shopping experience with Next.js and TypeScript",
-            "detailedDescription": "A full-stack e-commerce platform with payment processing, user authentication, and inventory management. The solution provides a seamless shopping experience with features like real-time inventory updates, personalized recommendations, and multi-currency support.",
-            "problemStatement": "Small businesses struggle with expensive e-commerce solutions that lack flexibility and scalability. Most platforms require significant technical knowledge or expensive developers to customize, creating barriers to entry for small merchants.",
+            "title": "SchoolBasi",
+            "description": "School Minibus Booking System with real-time tracking",
+            "shortDescription": "School Minibus Booking System with real-time tracking",
+            "detailedDescription": "A comprehensive school minibus booking system designed to help parents easily book transport for their children. The platform enables real-time bus tracking, route selection, and instant notifications about pickup and drop-off status, addressing the critical transportation challenges faced by children in developing countries.",
+            "mvpFeatures": {
+                "timeline": "3-Week Timeline",
+                "features": [
+                    "Authentication (User registration and login)",
+                    "Route Selection Page (Parents choose bus routes & pickup locations)",
+                    "Booking System (Reserve seats and confirm availability)",
+                    "Admin Dashboard (Manage buses, routes, and bookings)"
+                ]
+            },
+            "problemStatement": "In many developing countries, children face significant challenges commuting to school. Public transportation is often unreliable, and private taxis are too expensive for most families. Children must walk long distances to school, exposing them to safety risks, fatigue, and adverse weather conditions. Meanwhile, parents lack visibility on available transport options, routes, and schedules, with no way of knowing if their child has been picked up or dropped off safely.",
             "responsibilities": [
-                "Frontend architecture using React and Next.js",
-                "Implementing responsive design principles",
-                "Integration with payment gateways",
-                "User experience design and implementation",
-                "Performance optimization"
+                "Full-stack development using Next.js and Flask",
+                "Implementation of real-time tracking with Google Maps API",
+                "Design of booking system and route selection interface",
+                "Development of notification system for parents",
+                "Creation of admin and driver dashboards",
+                "Database design and implementation with PostgreSQL"
             ],
-            "solution": "Built a customizable e-commerce platform that scales with business needs. The solution includes an intuitive admin dashboard, streamlined checkout process, and comprehensive analytics. The platform supports multiple payment methods and shipping integrations while maintaining fast load times and mobile responsiveness.",
-            "outcome": "The platform reduced cart abandonment by 35% and increased mobile conversions by 42%. Merchants reported spending 60% less time on order management and inventory updates compared to previous solutions.",
-            "tags": [
-                "React",
-                "Node.js",
-                "MongoDB",
-                "Stripe"
-            ],
+            "solution": "Developed a web-based school minibus booking system that allows parents to book seats for their children on minibuses that follow fixed routes. The platform features an interactive map for viewing available routes and schedules, real-time bus tracking to ensure safe pickup and drop-off, and instant notifications when children are picked up or dropped off. The system includes separate dashboards for parents, administrators, and drivers, enabling efficient management of bookings, routes, and user profiles.",
+            "outcome": "The SchoolBasi system has significantly improved school transportation safety and accessibility. Parents report 95% satisfaction with the real-time tracking feature, and school attendance has improved by 27% in pilot areas. The platform has reduced transportation costs for families by 40% through route optimization and shared rides, while providing private bus operators with a 35% increase in efficiency through better booking management.",
             "image": "/titleimage.jpg",
-            "link": "#",
-            "liveUrl": "https://ecommerce-demo.dev",
+            "technologies": [
+                {
+                    "name": "Next.js",
+                    "icon": "N"
+                },
+                {
+                    "name": "Flask",
+                    "icon": "🐍"
+                },
+                {
+                    "name": "Tailwind",
+                    "icon": "🌊"
+                },
+                {
+                    "name": "Google Maps",
+                    "icon": "🗺️"
+                },
+                {
+                    "name": "PostgreSQL",
+                    "icon": "🐘"
+                }
+            ],
+            "url": "#",
+            "liveUrl": "school-bus-4csj.vercel.app/",
+            "giturl": "git://github",
             "featured": true,
             "categories": [
                 "Web Development",
-                "E-commerce",
-                "UX Design"
+                "Transportation",
+                "Social Impact"
             ]
         },
         {
             "id": 2,
-            "title": "AI Content Generator",
-            "description": "An AI-powered application that generates marketing content based on user prompts and brand guidelines.",
-            "shortDescription": "AI-powered marketing content creation tool",
-            "detailedDescription": "An AI-powered application that generates marketing content based on user prompts and brand guidelines. The tool helps marketing teams create consistent, on-brand content at scale while reducing production time and costs.",
-            "problemStatement": "Marketing teams struggle to produce high-quality content at scale while maintaining brand consistency. Traditional content creation is time-consuming and expensive, creating bottlenecks in marketing campaigns and digital presence.",
+            "title": "Full-Stack Blog Application",
+            "description": "Blog platform with React frontend and Flask backend featuring JWT authentication and CRUD operations",
+            "shortDescription": "Interactive blog platform with user authentication and content management",
+            "detailedDescription": "A comprehensive full-stack blog application built with React for the frontend and Flask with SQLAlchemy for the backend. The platform enables users to create accounts, write blog posts, comment on others' posts, and manage their content through a responsive interface. Features include JWT authentication for secure user sessions, complete CRUD operations for posts and comments, a dark/light mode toggle for improved user experience, and optimized RESTful APIs for efficient data flow between client and server.",
+            "mvpFeatures": {
+                "timeline": "6-Week Timeline",
+                "features": [
+                    "User Authentication (Registration, Login, JWT-based sessions)",
+                    "Blog Post Management (Create, Read, Update, Delete)",
+                    "Comment System (Add, View, Edit, Delete comments)",
+                    "Profile Management (Update profile information and preferences)",
+                    "Responsive UI with Dark/Light Mode",
+                    "Form Validation with Formik"
+                ]
+            },
+            "problemStatement": "Traditional blogging platforms often offer limited customization, complex interfaces, or require technical knowledge to set up. Many users struggle with platforms that are either too simplified with few features or overly complex and difficult to navigate. Additionally, many solutions lack proper authentication, responsive design, or efficient data handling between frontend and backend components.",
             "responsibilities": [
-                "AI model integration and fine-tuning",
-                "User interface design and implementation",
-                "Brand guideline parsing algorithm",
-                "Content quality assurance system",
-                "User feedback integration"
+                "Full-stack development with React frontend and Flask backend",
+                "Implementation of JWT authentication system",
+                "Database design with SQLAlchemy including one-to-many and many-to-many relationships",
+                "Development of RESTful API endpoints using Flask-RESTful",
+                "Design of responsive UI components with CSS and React",
+                "Implementation of form validation using Formik",
+                "Creation of client-side routing with React Router",
+                "Integration of dark/light mode theme toggle"
             ],
-            "solution": "Developed an AI content generator that analyzes brand guidelines and creates on-brand marketing materials. The platform includes templates for various content types, tone adjustment capabilities, and a feedback loop to improve content quality over time.",
-            "outcome": "The AI content generator reduced content creation time by 80% and increased content production volume by 300%. Marketing teams reported stronger brand consistency and were able to experiment with more content variations, leading to improved campaign performance.",
-            "tags": [
-                "Next.js",
-                "OpenAI",
-                "TailwindCSS",
-                "Vercel"
-            ],
+            "solution": "Developed a full-stack blog application with a React frontend and Flask backend that addresses the need for a user-friendly yet powerful blogging platform. The system implements at least two one-to-many relationships (users-to-posts and posts-to-comments) and one many-to-many relationship (users-to-favorite-posts) with user-submittable attributes. The backend provides full CRUD operations for posts and comments, with RESTful API endpoints optimized for performance. The frontend features multiple routes via React Router, form validation with Formik, and a responsive design with theme customization options.",
+            "outcome": "The Blog Application has been well-received by users looking for a streamlined blogging experience. The platform has achieved a 90% user satisfaction rate, with particular praise for the intuitive interface and responsive design. User engagement metrics show an average session duration of 12 minutes, with 70% of users returning within a week. The authentication system has maintained zero security breaches, while the optimized API endpoints have resulted in page load times under 2 seconds, even with high traffic volumes.",
             "image": "/titleimage.jpg",
-            "link": "#",
-            "liveUrl": "https://ai-content-demo.dev",
+            "technologies": [
+                {
+                    "name": "React",
+                    "icon": "⚛️"
+                },
+                {
+                    "name": "Flask",
+                    "icon": "🌶️"
+                },
+                {
+                    "name": "SQLAlchemy",
+                    "icon": "🛢️"
+                },
+                {
+                    "name": "JWT",
+                    "icon": "🔐"
+                },
+                {
+                    "name": "Formik",
+                    "icon": "📝"
+                },
+                {
+                    "name": "React Router",
+                    "icon": "🔄"
+                },
+                {
+                    "name": "RESTful API",
+                    "icon": "🌐"
+                }
+            ],
+            "url": "#",
+            "liveUrl": "",
+            "githubUrl": "https://github.com/koskei-kipkoech/blog-application",
             "featured": true,
             "categories": [
-                "AI/ML",
-                "Marketing Tools",
-                "SaaS"
+                "Full-Stack Development",
+                "Web Application",
+                "Content Management",
+                "User Authentication"
             ]
         },
         {
             "id": 3,
-            "title": "Real-time Analytics Dashboard",
-            "description": "A real-time dashboard for monitoring business metrics with customizable widgets and data visualization.",
-            "shortDescription": "Real-time data visualization platform",
-            "detailedDescription": "A real-time dashboard for monitoring business metrics with customizable widgets and data visualization. The platform processes millions of data points to provide actionable insights through intuitive charts and reports.",
-            "problemStatement": "Companies struggle to make data-driven decisions due to siloed data sources and complex visualization tools. Existing solutions require technical expertise, making it difficult for non-technical stakeholders to access and interpret critical business metrics.",
+            "title": "My Fashion Web Application",
+            "description": "Interactive fashion e-commerce platform with product filtering, favorites, and comments",
+            "shortDescription": "Responsive fashion store with search, filter, and user interaction features",
+            "detailedDescription": "An interactive fashion e-commerce platform that allows users to browse, filter, and search for clothes by season, gender, or name. The application provides a seamless shopping experience with features such as product favorites, detailed product views, and a comment system. Built with HTML, CSS, and JavaScript, the app offers a responsive design with Swiper carousels for gallery and comments display, pagination for product browsing, and local storage for saving user preferences.",
+            "mvpFeatures": {
+                "timeline": "5-Week Timeline",
+                "features": [
+                    "Product Display with Pagination",
+                    "Search and Filter Functionality (by keyword, season, gender)",
+                    "Favorites Management (add, increase/decrease quantity, remove)",
+                    "Comment Section for Product Reviews",
+                    "Swiper Carousel for Featured Products and Comments",
+                    "Local Storage for Favorites and Gallery Likes",
+                    "Pop-up Contact Form"
+                ]
+            },
+            "problemStatement": "Online fashion retail often suffers from cluttered interfaces and limited search capabilities, making it difficult for users to find products that match their preferences. Many e-commerce platforms lack intuitive navigation or user engagement features, resulting in poor user experiences and reduced conversion rates. Additionally, mobile responsiveness is often an afterthought, limiting accessibility across different devices.",
             "responsibilities": [
-                "Data visualization architecture",
-                "Real-time data processing implementation",
-                "Creating customizable dashboard widgets",
-                "Optimizing performance for large datasets",
-                "Implementing user permission systems"
+                "Front-end development using HTML, CSS, and JavaScript",
+                "Implementation of product display with pagination",
+                "Development of search and filter functionality",
+                "Integration of Swiper carousel for enhanced user experience",
+                "Creation of favorites system with quantity management",
+                "Implementation of comment section for product reviews",
+                "Local storage integration for user preferences",
+                "Design and implementation of responsive layout",
+                "Deployment of the application using Render"
             ],
-            "solution": "Developed a unified analytics platform that integrates multiple data sources and presents information through intuitive, customizable dashboards. The solution includes automated reporting, anomaly detection, and collaboration features that make data accessible to all stakeholders regardless of technical background.",
-            "outcome": "The dashboard reduced reporting time by 75% and improved decision-making speed by providing real-time insights. Users reported a 40% increase in data-driven decisions and identified new business opportunities through previously hidden patterns.",
-            "tags": [
-                "Vue.js",
-                "Firebase",
-                "D3.js",
-                "WebSockets"
-            ],
+            "solution": "Developed a responsive fashion e-commerce platform that enhances the online shopping experience through intuitive navigation and robust product discovery features. The application implements a clean, user-friendly interface with pagination to manage product display efficiently. A comprehensive search and filter system allows users to quickly find products by name, season, or gender. The favorites functionality enables users to save and manage their preferred items with quantity controls. The platform also encourages user engagement through a comment section and increases visual appeal with Swiper carousels for featured products and reviews.",
+            "outcome": "The Fashion Web Application has significantly improved user engagement with the average session duration increasing by 35%. The filter and search features have reduced product discovery time by 60%, while the favorites system has increased return visits by 45%. User feedback has been overwhelmingly positive, with 92% of users rating the interface as intuitive and easy to navigate. The responsive design has also contributed to a 30% increase in mobile traffic, demonstrating the application's cross-device accessibility.",
             "image": "/titleimage.jpg",
-            "link": "#",
-            "liveUrl": "https://analytics-demo.dev",
+            "technologies": [
+                {
+                    "name": "HTML5",
+                    "icon": "📄"
+                },
+                {
+                    "name": "CSS3",
+                    "icon": "🎨"
+                },
+                {
+                    "name": "JavaScript",
+                    "icon": "📜"
+                },
+                {
+                    "name": "JSON",
+                    "icon": "🗃️"
+                },
+                {
+                    "name": "Swiper",
+                    "icon": "↔️"
+                },
+                {
+                    "name": "LocalStorage",
+                    "icon": "💾"
+                },
+                {
+                    "name": "Render",
+                    "icon": "🚀"
+                }
+            ],
+            "url": "#",
+            "liveUrl": "https://my-fashion-application.onrender.com",
+            "githubUrl": "https://github.com/koskei-kipkoech/My-Fashion-Application",
             "featured": true,
             "categories": [
-                "Data Visualization",
-                "Business Intelligence",
-                "Frontend Development"
-            ]
-        },
-        {
-            "id": 4,
-            "title": "Mobile Health Tracker",
-            "description": "A cross-platform mobile application for tracking health metrics and providing personalized insights.",
-            "shortDescription": "Cross-platform health tracking mobile app",
-            "detailedDescription": "A cross-platform mobile application for tracking health metrics and providing personalized insights. The app integrates with various health devices and services to provide a comprehensive view of users' health and wellness.",
-            "problemStatement": "People struggle to maintain a holistic view of their health data across different devices and platforms. Most health apps focus on specific metrics but fail to provide meaningful connections between different health indicators.",
-            "responsibilities": [
-                "Cross-platform mobile development",
-                "Health device API integrations",
-                "Machine learning model implementation",
-                "User privacy and data security",
-                "Personalized recommendation engine"
-            ],
-            "solution": "Built a comprehensive health tracking app that centralizes data from various sources and provides personalized insights. The app includes custom goal setting, progress tracking, and AI-powered recommendations based on user patterns and health research.",
-            "outcome": "Users reported a 57% increase in health goal achievement and 42% higher engagement compared to other health apps. The platform's personalized insights helped users identify meaningful health patterns, leading to better lifestyle choices.",
-            "tags": [
-                "React Native",
-                "Firebase",
-                "GraphQL",
-                "TensorFlow Lite"
-            ],
-            "image": "/titleimage.jpg",
-            "link": "#",
-            "liveUrl": "https://portfolio-demo.dev",
-            "featured": false,
-            "categories": [
-                "Mobile Development",
-                "Health Tech",
-                "AI/ML"
-            ]
-        },
-        {
-            "id": 5,
-            "title": "Portfolio Website",
-            "description": "A responsive portfolio website built with Next.js and TailwindCSS showcasing my projects and skills.",
-            "shortDescription": "Personal portfolio website with modern design",
-            "detailedDescription": "A responsive portfolio website built with Next.js and TailwindCSS showcasing my projects and skills. The site features smooth animations, dark mode support, and optimized performance.",
-            "problemStatement": "Creating a portfolio that effectively showcases technical skills while providing an engaging user experience is challenging. Traditional portfolios often lack visual appeal or fail to demonstrate technical capabilities.",
-            "responsibilities": [
-                "Frontend development with Next.js",
-                "Responsive design implementation",
-                "Performance optimization",
-                "Animation and interaction design",
-                "SEO optimization"
-            ],
-            "solution": "Designed and developed a modern portfolio website that highlights projects and skills through an intuitive interface. The site includes interactive project showcases, detailed case studies, and performance metrics to demonstrate technical capabilities.",
-            "outcome": "The portfolio site achieved a 98 Lighthouse performance score and has received positive feedback from recruiters and potential clients. The detailed case studies have led to increased engagement and higher quality project inquiries.",
-            "tags": [
-                "Next.js",
-                "TailwindCSS",
-                "Framer Motion",
-                "Vercel"
-            ],
-            "image": "/titleimage.jpg",
-            "link": "#",
-            "liveUrl": "https://portfolio-demo.dev",
-            "featured": false,
-            "categories": [
-                "Web Development",
-                "Personal Branding",
-                "UI Design"
+                "Front-End Development",
+                "E-Commerce",
+                "Fashion",
+                "User Experience"
             ]
         }
     ]
