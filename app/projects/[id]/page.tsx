@@ -10,6 +10,11 @@ import Footer from "@/components/footer";
 import { BackgroundPattern } from "@/components/background-patterns";
 import { useParams } from "next/navigation";
 
+interface Technology {
+  name: string;
+  icon: string;
+}
+
 interface ProjectDetail {
   id: number;
   title: string;
@@ -20,12 +25,17 @@ interface ProjectDetail {
   responsibilities: string[];
   solution: string;
   outcome: string;
-  tags: string[];
-  categories: string[];
+  mvpFeatures: {
+    timeline: string;
+    features: string[];
+  };
   image: string;
-  link: string;
-  liveUrl: string;
+  technologies: Technology[];
+  url?: string;
+  liveUrl?: string;
+  githubUrl?: string;
   featured: boolean;
+  categories: string[];
 }
 
 export default function ProjectDetail() {
@@ -36,13 +46,12 @@ export default function ProjectDetail() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Load project data from db.json
-    import('../../../public/db.json')
+    fetch('/db.json')
+      .then((response) => response.json())
       .then((data) => {
-        const projectData = data.allProjects.find(
+        const projectData = data.highlightedProjects?.find(
           (p: ProjectDetail) => p.id.toString() === projectId
         );
-        // Fix: Handle undefined case properly
         setProject(projectData || null);
         setLoading(false);
       })
@@ -141,9 +150,9 @@ export default function ProjectDetail() {
               </div>
               
               <div className="flex flex-wrap gap-2 mb-6">
-                {project.tags.map((tag) => (
-                  <span key={tag} className="text-xs px-2 py-1 rounded-full bg-white/10 text-white/70">
-                    {tag}
+                {project.technologies.map((tech, index) => (
+                  <span key={index} className="text-xs px-2 py-1 rounded-full bg-white/10 text-white/70">
+                    {tech.icon} {tech.name}
                   </span>
                 ))}
               </div>

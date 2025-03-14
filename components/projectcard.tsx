@@ -212,6 +212,7 @@ export function SelectedWork() {
               </motion.div>
             ))}
           </div>
+          <ViewAllProjectsButton />
       </motion.section>
     </BackgroundLines>
   );
