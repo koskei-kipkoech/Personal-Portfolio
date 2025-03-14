@@ -109,7 +109,7 @@ function Contact() {
                 </div>
                 <div>
                   <p className="text-sm text-white/50">Location</p>
-                  <p className="text-white">San Francisco, CA</p>
+                  <p className="text-white">Nairobi, Kenya</p>
                 </div>
               </div>
             </div>
