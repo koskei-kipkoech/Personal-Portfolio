@@ -49,9 +49,18 @@ export default function ProjectDetail() {
     fetch('/db.json')
       .then((response) => response.json())
       .then((data) => {
-        const projectData = data.highlightedProjects?.find(
+        // First check in highlightedProjects
+        let projectData = data.highlightedProjects?.find(
           (p: ProjectDetail) => p.id.toString() === projectId
         );
+        
+        // If not found, check in allProjects
+        if (!projectData && data.allProjects) {
+          projectData = data.allProjects.find(
+            (p: ProjectDetail) => p.id.toString() === projectId
+          );
+        }
+        
         setProject(projectData || null);
         setLoading(false);
       })
