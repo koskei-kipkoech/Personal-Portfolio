@@ -7,7 +7,6 @@ function About() {
     <section id="about" className="pt-28 pb-20"> {/* Changed from py-20 to pt-28 pb-20 */}
       <div className="container mx-auto px-6">
 
-
         <div className="flex flex-col items-center mb-16">
           <h2 className="cursor-pointer text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
             About Me
@@ -72,78 +71,76 @@ function About() {
             </div>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="flex overflow-x-auto gap-6 pb-4 scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-transparent md:grid lg:grid-cols-3 md:gap-8 md:overflow-visible">
             {/* GitHub Stats */}
-            {/* <motion.div
+            <motion.div 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
               viewport={{ once: true }}
-              className="bg-zinc-900/50 backdrop-blur-sm rounded-xl p-6 border border-white/5"
+              className="bg-zinc-900/50 backdrop-blur-sm rounded-xl p-6 border border-white/5 min-w-[300px] md:min-w-[400px] lg:min-w-full flex-1"
             >
               <h3 className="cursor-pointer text-xl font-semibold mb-6 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
                 GitHub Stats
               </h3>
-              <div className="flex justify-center overflow-x-auto py-2 scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-transparent">
-                <div className="min-w-[500px]">
-                  <iframe
-                    src="https://github-readme-stats.vercel.app/api?username=koskei-kipkoech&show_icons=true&theme=dark&hide_border=false&count_private=true"
-                    width="100%"
-                    height="200"
-                    frameBorder="0"
-                    title="GitHub Stats"
-                  />
-                </div>
+              <div className="flex justify-center overflow-x-auto py-2">
+                <iframe
+                  src="https://github-readme-stats.vercel.app/api?username=koskei-kipkoech&show_icons=true&theme=dark&hide_border=false&count_private=true"
+                  width="100%"
+                  height="200"
+                  frameBorder="0"
+                  title="GitHub Stats"
+                  className="min-w-full max-w-[500px]"
+                />
               </div>
-            </motion.div> */}
+            </motion.div>
 
             {/* Contribution Streak */}
-            {/* <motion.div
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
               viewport={{ once: true }}
-              className="bg-zinc-900/50 backdrop-blur-sm rounded-xl p-6 border border-white/5"
+              className="bg-zinc-900/50 backdrop-blur-sm rounded-xl p-6 border border-white/5 min-w-[300px] md:min-w-[400px] lg:min-w-full flex-1"
             >
               <h3 className="cursor-pointer text-xl font-semibold mb-6 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
                 Contribution Streak
               </h3>
-              <div className="flex justify-center overflow-x-auto py-2 scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-transparent">
-                <div className="min-w-[500px]">
-                  <iframe
-                    src="https://github-readme-streak-stats.herokuapp.com/?user=koskei-kipkoech&theme=dark&hide_border=false"
-                    width="100%"
-                    height="200"
-                    frameBorder="0"
-                    title="GitHub Streak Stats"
-                  />
-                </div>
+              <div className="flex justify-center overflow-x-auto py-2">
+                <iframe
+                  src="https://github-readme-streak-stats.herokuapp.com/?user=koskei-kipkoech&theme=dark&hide_border=false"
+                  width="100%"
+                  height="200"
+                  frameBorder="0"
+                  title="GitHub Streak Stats"
+                  className="min-w-full max-w-[500px]"
+                />
               </div>
-            </motion.div> */}
+            </motion.div>
 
             {/* Most Used Languages */}
-            {/* <motion.div
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
               viewport={{ once: true }}
-              className="bg-zinc-900/50 backdrop-blur-sm rounded-xl p-6 border border-white/5"
+              className="bg-zinc-900/50 backdrop-blur-sm rounded-xl p-6 border border-white/5 min-w-[300px] md:min-w-[400px] lg:min-w-full flex-1"
             >
               <h3 className="cursor-pointer text-xl font-semibold mb-6 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
                 Most Used Languages
               </h3>
-              <div className="flex justify-center overflow-x-auto py-2 scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-transparent">
-                <div className="min-w-[500px]">
-                  <iframe
-                    src="https://github-readme-stats.vercel.app/api/top-langs/?username=koskei-kipkoech&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact"
-                    width="100%"
-                    height="200"
-                    frameBorder="0"
-                    title="Top Languages"
-                  />
-                </div>
+              <div className="flex justify-center overflow-x-auto py-2">
+                <iframe
+                  src="https://github-readme-stats.vercel.app/api/top-langs/?username=koskei-kipkoech&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact"
+                  width="100%"
+                  height="200"
+                  frameBorder="0"
+                  title="Top Languages"
+                  className="min-w-full max-w-[500px]"
+                />
               </div>
-            </motion.div>*/}
+            </motion.div>
+          </div>
         </div> 
 
         {/* GitHub Activity Section */}
@@ -206,7 +203,6 @@ function About() {
             </a>
           </div>
         </motion.div>
-      </div>
       </div>
     </section>
   )
