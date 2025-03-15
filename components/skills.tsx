@@ -1,6 +1,17 @@
 "use client"
 
 import { motion } from "framer-motion"
+import { Swiper, SwiperSlide } from "swiper/react"
+import { Autoplay, Pagination, Navigation, EffectCoverflow } from "swiper/modules"
+
+// Import Swiper styles
+import "swiper/css"
+import "swiper/css/pagination"
+import "swiper/css/navigation"
+import "swiper/css/effect-coverflow"
+
+// Custom styles for the Swiper
+import "../styles/swiper-custom.css"
 
 // Combined technical and soft skills data
 const skillCategories = [
@@ -157,24 +168,48 @@ function Skills() {
           className="mt-16"
         >
           <h3 className="text-xl font-semibold mb-6 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
-            Technologies & Tools
+            Other Technologies & Tools
           </h3>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+          <Swiper
+            effect={"coverflow"}
+            grabCursor={true}
+            centeredSlides={true}
+            slidesPerView={"auto"}
+            loop={true}
+            loopAdditionalSlides={5}
+            speed={800}
+            coverflowEffect={{
+              rotate: 50,
+              stretch: 0,
+              depth: 100,
+              modifier: 1,
+              slideShadows: false,
+            }}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            pagination={{ clickable: true }}
+            modules={[EffectCoverflow, Pagination, Autoplay, Navigation]}
+            className="mySwiper"
+            style={{ padding: "30px 0" }}
+          >
             {additionalSkills.map((tech, index) => (
-              <motion.div
-                key={tech.name}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.3, delay: index * 0.05 }}
-                viewport={{ once: true }}
-                whileHover={{ y: -5, scale: 1.03 }}
-                className="bg-zinc-900/30 backdrop-blur-sm rounded-lg p-4 flex items-center justify-center gap-2 border border-white/5 hover:border-blue-500/50 transition-all duration-300"
-              >
-                <span className="text-white/60">{tech.icon}</span>
-                <span className="text-white/80 text-sm md:text-base">{tech.name}</span>
-              </motion.div>
+              <SwiperSlide key={tech.name} style={{ width: "auto", maxWidth: "200px" }}>
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.3 }}
+                  viewport={{ once: true }}
+                  whileHover={{ y: -5, scale: 1.03 }}
+                  className="bg-zinc-900/30 backdrop-blur-sm rounded-lg p-4 flex items-center justify-center gap-2 border border-white/5 hover:border-blue-500/50 transition-all duration-300 mx-auto h-full"
+                >
+                  <span className="text-white/60">{tech.icon}</span>
+                  <span className="text-white/80 text-sm md:text-base">{tech.name}</span>
+                </motion.div>
+              </SwiperSlide>
             ))}
-          </div>
+          </Swiper>
         </motion.div>
         
         <motion.div
