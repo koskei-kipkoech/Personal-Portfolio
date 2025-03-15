@@ -116,7 +116,7 @@ function Contact() {
 
             <div className="flex space-x-4 pt-4">
               <a
-                href="#"
+                href="https://github.com/koskei-kipkoech"
                 className="w-10 h-10 rounded-full bg-zinc-800 flex items-center justify-center text-white/70 hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-500 hover:text-white transition-all duration-300"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
@@ -124,7 +124,7 @@ function Contact() {
                 </svg>
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/patrick-kipkoech/"
                 className="w-10 h-10 rounded-full bg-zinc-800 flex items-center justify-center text-white/70 hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-500 hover:text-white transition-all duration-300"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
@@ -132,7 +132,7 @@ function Contact() {
                 </svg>
               </a>
               <a
-                href="#"
+                href="https://x.com/patrickkip22"
                 className="w-10 h-10 rounded-full bg-zinc-800 flex items-center justify-center text-white/70 hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-500 hover:text-white transition-all duration-300"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
