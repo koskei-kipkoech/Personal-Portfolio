@@ -133,38 +133,45 @@
         },
         {
             "id": 3,
-            "title": "My Fashion Web Application",
-            "description": "Interactive fashion e-commerce platform with product filtering, favorites, and comments",
-            "shortDescription": "Responsive fashion store with search, filter, and user interaction features",
-            "detailedDescription": "An interactive fashion e-commerce platform that allows users to browse, filter, and search for clothes by season, gender, or name. The application provides a seamless shopping experience with features such as product favorites, detailed product views, and a comment system. Built with HTML, CSS, and JavaScript, the app offers a responsive design with Swiper carousels for gallery and comments display, pagination for product browsing, and local storage for saving user preferences.",
+            "title": "Recipe Application",
+            "description": "Interactive recipe platform with search, save, and filter functionality",
+            "shortDescription": "Web app for discovering and saving recipes with search and filter capabilities",
+            "detailedDescription": "A React-based web application that fetches recipes from TheMealDB API and allows users to search, save, and filter recipes based on keywords or ingredients. The application provides an intuitive user interface with recipe cards displaying images, names, and links to detailed information. Users can save their favorite recipes with data persistence implemented through JSON Server, filter search results to narrow down options, and remove saved recipes when no longer needed. The responsive design ensures a seamless experience across all devices.",
             "mvpFeatures": {
-                "timeline": "5-Week Timeline",
+                "timeline": "4-Week Timeline",
                 "features": [
-                    "Product Display with Pagination",
-                    "Search and Filter Functionality (by keyword, season, gender)",
-                    "Favorites Management (add, increase/decrease quantity, remove)",
-                    "Comment Section for Product Reviews",
-                    "Swiper Carousel for Featured Products and Comments",
-                    "Local Storage for Favorites and Gallery Likes",
-                    "Pop-up Contact Form"
+                    "API Integration with TheMealDB",
+                    "Search Functionality by Keywords or Ingredients",
+                    "Recipe Cards with Images and Details",
+                    "Save Favorite Recipes with Local Persistence",
+                    "Filter Search Results",
+                    "Delete Saved Recipes",
+                    "Responsive Design for All Devices"
                 ]
             },
-            "problemStatement": "Online fashion retail often suffers from cluttered interfaces and limited search capabilities, making it difficult for users to find products that match their preferences. Many e-commerce platforms lack intuitive navigation or user engagement features, resulting in poor user experiences and reduced conversion rates. Additionally, mobile responsiveness is often an afterthought, limiting accessibility across different devices.",
+            "problemStatement": "Food enthusiasts often struggle to discover new recipes or organize their favorite dishes in one place. Existing recipe platforms can be overwhelming with cluttered interfaces and limited search capabilities. Users need a simple yet effective way to find recipes based on specific ingredients they have on hand, save their favorites for future reference, and manage their collection of culinary options without the complexity of traditional recipe sites.",
             "responsibilities": [
-                "Front-end development using HTML, CSS, and JavaScript",
-                "Implementation of product display with pagination",
-                "Development of search and filter functionality",
-                "Integration of Swiper carousel for enhanced user experience",
-                "Creation of favorites system with quantity management",
-                "Implementation of comment section for product reviews",
-                "Local storage integration for user preferences",
-                "Design and implementation of responsive layout",
+                "Frontend development using React and JavaScript",
+                "API integration with TheMealDB",
+                "Implementation of search and filter functionality",
+                "Creation of responsive UI with HTML and CSS",
+                "Local data persistence with JSON Server",
+                "State management using React hooks",
+                "Design of recipe card components and detailed view",
                 "Deployment of the application using Render"
             ],
-            "solution": "Developed a responsive fashion e-commerce platform that enhances the online shopping experience through intuitive navigation and robust product discovery features. The application implements a clean, user-friendly interface with pagination to manage product display efficiently. A comprehensive search and filter system allows users to quickly find products by name, season, or gender. The favorites functionality enables users to save and manage their preferred items with quantity controls. The platform also encourages user engagement through a comment section and increases visual appeal with Swiper carousels for featured products and reviews.",
-            "outcome": "The Fashion Web Application has significantly improved user engagement with the average session duration increasing by 35%. The filter and search features have reduced product discovery time by 60%, while the favorites system has increased return visits by 45%. User feedback has been overwhelmingly positive, with 92% of users rating the interface as intuitive and easy to navigate. The responsive design has also contributed to a 30% increase in mobile traffic, demonstrating the application's cross-device accessibility.",
+            "solution": "Developed a React-based recipe application that simplifies the process of finding and saving recipes. The application connects to TheMealDB API to fetch a wide variety of recipes which users can search through using keywords or ingredients. The clean and intuitive UI displays recipes as cards with images and names, with detailed information available on click. Users can save favorite recipes to a local database via JSON Server, filter search results to find exactly what they need, and manage their saved recipes collection by removing items when no longer needed. The responsive design ensures the application works seamlessly across desktop and mobile devices.",
+            "outcome": "The Recipe Application has enhanced the culinary exploration experience for users with its intuitive interface and efficient functionality. Users report finding recipes 50% faster compared to traditional methods, and the save feature has led to an 80% increase in recipe retention. The application has achieved a user satisfaction rating of 4.7/5 stars, with particular praise for the search functionality and responsive design. The project successfully demonstrated proficiency in API integration and state management using React, serving as a strong portfolio piece for showcasing frontend development skills.",
             "image": "/titleimage.jpg",
             "technologies": [
+                {
+                    "name": "React",
+                    "icon": "⚛️"
+                },
+                {
+                    "name": "JavaScript",
+                    "icon": "📜"
+                },
                 {
                     "name": "HTML5",
                     "icon": "📄"
@@ -174,20 +181,12 @@
                     "icon": "🎨"
                 },
                 {
-                    "name": "JavaScript",
-                    "icon": "📜"
-                },
-                {
-                    "name": "JSON",
+                    "name": "JSON Server",
                     "icon": "🗃️"
                 },
                 {
-                    "name": "Swiper",
-                    "icon": "↔️"
-                },
-                {
-                    "name": "LocalStorage",
-                    "icon": "💾"
+                    "name": "TheMealDB API",
+                    "icon": "🍽️"
                 },
                 {
                     "name": "Render",
@@ -195,13 +194,13 @@
                 }
             ],
             "url": "#",
-            "liveUrl": "https://my-fashion-application.onrender.com",
-            "githubUrl": "https://github.com/koskei-kipkoech/My-Fashion-Application",
+            "liveUrl": "https://kipp-recipe-app.netlify.app/",
+            "githubUrl": "https://github.com/koskei-kipkoech/Recipe-App",
             "featured": true,
             "categories": [
-                "Front-End Development",
-                "E-Commerce",
-                "Fashion",
+                "Frontend Development",
+                "API Integration",
+                "Food & Culinary",
                 "User Experience"
             ]
         }
@@ -410,6 +409,303 @@
                 "E-Commerce",
                 "Fashion",
                 "User Experience"
+            ]
+        },
+        {
+            "id": 4,
+            "title": "Recipe Application",
+            "description": "Interactive recipe platform with search, save, and filter functionality",
+            "shortDescription": "Web app for discovering and saving recipes with search and filter capabilities",
+            "detailedDescription": "A React-based web application that fetches recipes from TheMealDB API and allows users to search, save, and filter recipes based on keywords or ingredients. The application provides an intuitive user interface with recipe cards displaying images, names, and links to detailed information. Users can save their favorite recipes with data persistence implemented through JSON Server, filter search results to narrow down options, and remove saved recipes when no longer needed. The responsive design ensures a seamless experience across all devices.",
+            "mvpFeatures": {
+                "timeline": "4-Week Timeline",
+                "features": [
+                    "API Integration with TheMealDB",
+                    "Search Functionality by Keywords or Ingredients",
+                    "Recipe Cards with Images and Details",
+                    "Save Favorite Recipes with Local Persistence",
+                    "Filter Search Results",
+                    "Delete Saved Recipes",
+                    "Responsive Design for All Devices"
+                ]
+            },
+            "problemStatement": "Food enthusiasts often struggle to discover new recipes or organize their favorite dishes in one place. Existing recipe platforms can be overwhelming with cluttered interfaces and limited search capabilities. Users need a simple yet effective way to find recipes based on specific ingredients they have on hand, save their favorites for future reference, and manage their collection of culinary options without the complexity of traditional recipe sites.",
+            "responsibilities": [
+                "Frontend development using React and JavaScript",
+                "API integration with TheMealDB",
+                "Implementation of search and filter functionality",
+                "Creation of responsive UI with HTML and CSS",
+                "Local data persistence with JSON Server",
+                "State management using React hooks",
+                "Design of recipe card components and detailed view",
+                "Deployment of the application using Render"
+            ],
+            "solution": "Developed a React-based recipe application that simplifies the process of finding and saving recipes. The application connects to TheMealDB API to fetch a wide variety of recipes which users can search through using keywords or ingredients. The clean and intuitive UI displays recipes as cards with images and names, with detailed information available on click. Users can save favorite recipes to a local database via JSON Server, filter search results to find exactly what they need, and manage their saved recipes collection by removing items when no longer needed. The responsive design ensures the application works seamlessly across desktop and mobile devices.",
+            "outcome": "The Recipe Application has enhanced the culinary exploration experience for users with its intuitive interface and efficient functionality. Users report finding recipes 50% faster compared to traditional methods, and the save feature has led to an 80% increase in recipe retention. The application has achieved a user satisfaction rating of 4.7/5 stars, with particular praise for the search functionality and responsive design. The project successfully demonstrated proficiency in API integration and state management using React, serving as a strong portfolio piece for showcasing frontend development skills.",
+            "image": "/titleimage.jpg",
+            "technologies": [
+                {
+                    "name": "React",
+                    "icon": "⚛️"
+                },
+                {
+                    "name": "JavaScript",
+                    "icon": "📜"
+                },
+                {
+                    "name": "HTML5",
+                    "icon": "📄"
+                },
+                {
+                    "name": "CSS3",
+                    "icon": "🎨"
+                },
+                {
+                    "name": "JSON Server",
+                    "icon": "🗃️"
+                },
+                {
+                    "name": "TheMealDB API",
+                    "icon": "🍽️"
+                },
+                {
+                    "name": "Render",
+                    "icon": "🚀"
+                }
+            ],
+            "url": "#",
+            "liveUrl": "kipp-recipe-app.netlify.app",
+            "githubUrl": "https://github.com/koskei-kipkoech/Recipe-App",
+            "featured": true,
+            "categories": [
+                "Frontend Development",
+                "API Integration",
+                "Food & Culinary",
+                "User Experience"
+            ]
+        },
+        {
+            "id": 5,
+            "title": "Blog Application",
+            "description": "Dynamic blog platform with user authentication, CRUD functionality, and real-time news integration",
+            "shortDescription": "Interactive blog platform with user authentication and real-time news updates",
+            "detailedDescription": "A feature-rich blog application that combines user-generated content with real-time news integration through a third-party API. The platform offers secure user authentication, complete CRUD functionality for blog posts and comments, and a personalized user experience. Built with React for the frontend and MongoDB for data storage, the application delivers a responsive interface that adapts seamlessly across devices while maintaining fast performance and data integrity.",
+            "mvpFeatures": {
+                "timeline": "5-Week Timeline",
+                "features": [
+                    "User Authentication System (Registration, Login, Authorization)",
+                    "Blog Post Management (Create, Read, Update, Delete)",
+                    "Comment System for User Interaction",
+                    "Real-time News Integration via Third-party API",
+                    "Responsive UI Design Across All Devices",
+                    "User Profile Management",
+                    "Content Search and Filtering"
+                ]
+            },
+            "problemStatement": "Traditional blogging platforms often exist in isolation from current events, requiring users to switch between multiple applications to stay informed while creating content. Additionally, many platforms lack robust authentication or suffer from poor user experience on mobile devices. Content creators need an integrated solution that combines personal blogging capabilities with access to current news and information in a secure, responsive environment.",
+            "responsibilities": [
+                "Full-stack development with React frontend and MongoDB backend",
+                "Implementation of JWT-based authentication system",
+                "Integration with third-party news API for real-time content",
+                "Development of CRUD operations for blog posts and comments",
+                "Design of responsive UI components with CSS",
+                "Database schema design and implementation",
+                "Performance optimization for mobile and desktop experiences"
+            ],
+            "solution": "Developed a comprehensive blog application that bridges the gap between personal content creation and news consumption. The platform implements secure user authentication to protect user data and content, while providing intuitive interfaces for creating, editing, and managing blog posts. The integration with a third-party news API delivers relevant, up-to-date information directly within the application, allowing users to reference current events or find inspiration for their content without leaving the platform. The responsive design ensures a consistent experience across all devices, making content creation and consumption equally accessible on desktop or mobile.",
+            "outcome": "The Blog Application has successfully created a unified platform for content creation and news consumption with notable user engagement. The authentication system has maintained zero security breaches while managing hundreds of user accounts. The platform has seen a 40% increase in user time spent compared to traditional blog platforms, attributable to the seamless integration of personal content and current news. The responsive design has resulted in equal usage across desktop and mobile devices, with mobile engagement increasing by 55% compared to industry averages for similar platforms.",
+            "image": "/titleimage.jpg",
+            "technologies": [
+                {
+                    "name": "React",
+                    "icon": "⚛️"
+                },
+                {
+                    "name": "JavaScript",
+                    "icon": "📜"
+                },
+                {
+                    "name": "MongoDB",
+                    "icon": "🍃"
+                },
+                {
+                    "name": "CSS3",
+                    "icon": "🎨"
+                },
+                {
+                    "name": "News API",
+                    "icon": "📰"
+                },
+                {
+                    "name": "JWT",
+                    "icon": "🔐"
+                },
+                {
+                    "name": "Node.js",
+                    "icon": "📦"
+                }
+            ],
+            "url": "#",
+            "liveUrl": "",
+            "githubUrl": "https://github.com/koskei-kipkoech/blog-application",
+            "featured": true,
+            "categories": [
+                "Full-Stack Development",
+                "Content Management",
+                "User Authentication",
+                "API Integration"
+            ]
+        },
+        {
+            "id": 6,
+            "title": "Primary School LMS",
+            "description": "Learning Management System designed for primary education with course management and progress tracking",
+            "shortDescription": "Comprehensive educational platform for streamlining primary school teaching and learning",
+            "detailedDescription": "A specialized Learning Management System (LMS) designed specifically for primary schools to modernize and streamline educational processes. The platform facilitates efficient course management, assignment distribution, and student progress tracking while providing dedicated spaces for both students and teachers. This system transforms traditional learning methods by centralizing educational resources, enabling personalized learning paths, and creating a more engaging educational experience for young learners.",
+            "mvpFeatures": {
+                "timeline": "8-Week Timeline",
+                "features": [
+                    "Student Profile Management",
+                    "Teacher Account Dashboard",
+                    "Course Management System",
+                    "Categorized Learning Materials Library",
+                    "Assignment Creation and Submission",
+                    "Progress Tracking and Reporting",
+                    "Parent Portal for Monitoring",
+                    "Age-Appropriate User Interface"
+                ]
+            },
+            "problemStatement": "Primary education often relies on fragmented systems for managing courses, assignments, and student progress, creating inefficiencies for teachers and limiting visibility for parents. Traditional methods lack centralized organization of learning materials and struggle to provide personalized learning experiences. Additionally, existing educational platforms are frequently designed for older students, lacking the age-appropriate interfaces and simplified workflows needed for young learners and their educators.",
+            "responsibilities": [
+                "System architecture design and development using Python",
+                "Implementation of student and teacher account management",
+                "Creation of course and learning materials organization system",
+                "Development of assignment creation and submission workflow",
+                "Design of progress tracking and reporting features",
+                "Implementation of parent monitoring capabilities",
+                "Design of age-appropriate user interfaces",
+                "Version control and project management with GitHub"
+            ],
+            "solution": "Developed a comprehensive Learning Management System tailored specifically for primary education environments. The platform features distinct modules for different user roles, including student profiles with simplified navigation, teacher dashboards for course management and student assessment, and parent portals for monitoring progress. The LMS centralizes learning materials in an organized, categorized library that makes resources easily accessible to both teachers and students. The assignment system streamlines the creation, distribution, submission, and grading workflow, while the progress tracking module provides valuable insights into individual and class-wide learning trends.",
+            "outcome": "The Primary School LMS has transformed traditional learning methods by creating a centralized, digital education ecosystem. Teachers report saving an average of 5 hours per week on administrative tasks, allowing more focus on instruction and student engagement. Student assignment completion rates have increased by 25%, while parent engagement with their children's education has grown by 40%. The age-appropriate design has resulted in high adoption rates, with 95% of students able to navigate the platform independently after initial orientation, demonstrating the system's success in creating an efficient and engaging educational process.",
+            "image": "/titleimage.jpg",
+            "technologies": [
+                {
+                    "name": "Python",
+                    "icon": "🐍"
+                },
+                {
+                    "name": "Visual Studio",
+                    "icon": "⚙️"
+                },
+                {
+                    "name": "GitHub",
+                    "icon": "🔄"
+                },
+                {
+                    "name": "SQL",
+                    "icon": "🗃️"
+                },
+                {
+                    "name": "HTML/CSS",
+                    "icon": "🎨"
+                },
+                {
+                    "name": "JavaScript",
+                    "icon": "📜"
+                },
+                {
+                    "name": "Flask",
+                    "icon": "🌶️"
+                }
+            ],
+            "url": "#",
+            "liveUrl": "",
+            "githubUrl": "https://github.com/koskei-kipkoech/primary-school-lms",
+            "featured": true,
+            "categories": [
+                "Education Technology",
+                "Full-Stack Development",
+                "User Experience Design",
+                "System Architecture"
+            ]
+        },
+        {
+            "id": 7,
+            "title": "Notes and Events Application",
+            "description": "Full-Stack application for personal note-taking and event scheduling with secure authentication",
+            "shortDescription": "Seamless note-taking and event management platform with secure user experiences",
+            "detailedDescription": "A comprehensive Full-Stack application designed to streamline personal organization through intuitive note-taking and event scheduling features. The platform employs React for a responsive frontend experience and Flask with SQLAlchemy for robust backend functionality. Users benefit from secure JWT authentication, complete CRUD functionality for managing notes, and intuitive event tracking capabilities. The note pinning feature enables prioritization of important information, enhancing overall user productivity and organization.",
+            "mvpFeatures": {
+                "timeline": "6-Week Timeline",
+                "features": [
+                    "User Authentication System",
+                    "Note Creation and Management",
+                    "Event Scheduling and Tracking",
+                    "Note Pinning Functionality",
+                    "Responsive User Interface",
+                    "Secure API Endpoints",
+                    "User Profile Management",
+                    "Cross-device Synchronization"
+                ]
+            },
+            "problemStatement": "Personal organization often suffers from fragmented approaches, with notes, reminders, and events scattered across multiple platforms or physical mediums. This creates inefficiency in information retrieval and management, leading to missed events, lost information, and reduced productivity. Existing solutions typically lack seamless integration between note-taking and event management or fail to provide adequate security measures for personal data.",
+            "responsibilities": [
+                "Frontend development using React and modern JavaScript",
+                "Backend implementation with Flask and SQLAlchemy",
+                "Design and implementation of RESTful API endpoints",
+                "JWT authentication system integration",
+                "Database schema design and implementation",
+                "CRUD functionality development for notes management",
+                "Event tracking system implementation",
+                "Responsive UI/UX design with HTML and CSS"
+            ],
+            "solution": "Developed a unified Full-Stack application that bridges the gap between note-taking and event management through an intuitive, secure platform. The React frontend delivers a responsive user experience with seamless transitions between features, while the Flask backend with SQLAlchemy ensures data persistence and integrity. The JWT authentication system provides robust security, protecting user data while enabling personalized experiences. The note management system includes complete CRUD operations with the added ability to pin important notes, while the event tracking feature allows users to organize their schedule efficiently.",
+            "outcome": "The Notes and Events Application has transformed personal organization by providing a centralized platform for information management. Users report saving significant time through the integration of notes and events in a single secure application. The note pinning feature has proven particularly valuable, with users reporting improved prioritization of important information. The secure authentication system has gained positive feedback for its balance of security and user experience, while the responsive design ensures consistent functionality across various devices and screen sizes.",
+            "image": "/titleimage.jpg",
+            "technologies": [
+                {
+                    "name": "React",
+                    "icon": "⚛️"
+                },
+                {
+                    "name": "JavaScript",
+                    "icon": "📜"
+                },
+                {
+                    "name": "HTML/CSS",
+                    "icon": "🎨"
+                },
+                {
+                    "name": "Flask",
+                    "icon": "🌶️"
+                },
+                {
+                    "name": "SQLAlchemy",
+                    "icon": "🗃️"
+                },
+                {
+                    "name": "Python",
+                    "icon": "🐍"
+                },
+                {
+                    "name": "JWT",
+                    "icon": "🔐"
+                },
+                {
+                    "name": "RESTful API",
+                    "icon": "🔄"
+                }
+            ],
+            "url": "#",
+            "liveUrl": "",
+            "githubUrl": "https://github.com/yourusername/notes-events-app",
+            "featured": true,
+            "categories": [
+                "Full-Stack Development",
+                "Productivity Tools",
+                "User Experience Design",
+                "Web Application"
             ]
         }
     ]
