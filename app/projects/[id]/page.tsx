@@ -29,6 +29,7 @@ interface ProjectDetail {
     timeline: string;
     features: string[];
   };
+  landingImg?: string[] | string;
   image: string;
   technologies: Technology[];
   url?: string;
@@ -44,6 +45,7 @@ export default function ProjectDetail() {
   
   const [project, setProject] = useState<ProjectDetail | null>(null);
   const [loading, setLoading] = useState(true);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
     fetch('/db.json')
@@ -157,7 +159,7 @@ export default function ProjectDetail() {
                   </span>
                 ))}
               </div>
-              
+              <h2 className="text-2xl font-semibold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">Technologies</h2>
               <div className="flex flex-wrap gap-2 mb-6">
                 {project.technologies.map((tech, index) => (
                   <span key={index} className="text-xs px-2 py-1 rounded-full bg-white/10 text-white/70">
@@ -202,50 +204,114 @@ export default function ProjectDetail() {
               </p>
             </div>
           </motion.div>
-          
+          {project.landingImg && (
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+              className="relative h-64 md:h-96 rounded-xl overflow-hidden mb-16"
+            >
+              {Array.isArray(project.landingImg) ? (
+                <>
+                  <Image
+                    src={project.landingImg[currentImageIndex]}
+                    alt="Landing page screenshot"
+                    fill
+                    className="object-cover object-center"
+                  />
+                  <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                    {project.landingImg.map((_, index) => (
+                      <button
+                        key={index}
+                        onClick={() => setCurrentImageIndex(index)}
+                        className={`w-2 h-2 rounded-full transition-colors ${index === currentImageIndex ? 'bg-white' : 'bg-white/50'}`}
+                      />
+                    ))}
+                  </div>
+                </>
+              ) : (
+                <Image
+                  src={project.landingImg}
+                  alt="Landing page screenshot"
+                  fill
+                  className="object-cover object-center"
+                />
+              )}
+            </motion.div>
+          )}
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-            className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16"
+            transition={{ duration: 0.5, delay: 0.4 }}
+            className="bg-zinc-900/50 backdrop-blur-sm rounded-xl border border-white/5 p-6 mb-8 hover:border-blue-500/30 transition-all duration-300"
           >
-            <div className="bg-zinc-900/50 backdrop-blur-sm rounded-xl border border-white/5 p-6">
-              <h2 className="text-2xl font-semibold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">
-                My Responsibilities
-              </h2>
-              <ul className="text-white/70 space-y-2 ml-5">
-                {project.responsibilities.map((resp, index) => (
-                  <li key={index} className="list-disc">
-                    {resp}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            
-            <div className="bg-zinc-900/50 backdrop-blur-sm rounded-xl border border-white/5 p-6">
-              <h2 className="text-2xl font-semibold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">
-                Outcome & Impact
-              </h2>
-              <p className="text-white/70">
-                {project.outcome}
-              </p>
-            </div>
-          </motion.div>
-          
-          <div className="flex justify-center">
-            <Link href="/projects">
-              <Button variant="outline" className="border border-white/10 hover:bg-white/5">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+            <h2 className="text-2xl font-semibold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+              </svg>
+              MVP Features
+            </h2>
+            <div className="mb-4">
+              <span className="text-blue-300 flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
-                Back to All Projects
-              </Button>
-            </Link>
+                {project.mvpFeatures.timeline}
+              </span>
+            </div>
+            <ul className="text-white/70 space-y-3">
+              {project.mvpFeatures.features.map((feature, index) => (
+                <li key={index} className="flex items-start gap-3 p-2 rounded-lg hover:bg-white/5 transition-colors">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mt-0.5 text-blue-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>{feature}</span>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
+            className="bg-zinc-900/50 backdrop-blur-sm rounded-xl border border-white/5 p-6 mb-8 hover:border-purple-500/30 transition-all duration-300"
+          >
+            <h2 className="text-2xl font-semibold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              Responsibilities
+            </h2>
+            <ul className="text-white/70 space-y-3">
+              {project.responsibilities.map((responsibility, index) => (
+                <li key={index} className="flex items-start gap-3 p-2 rounded-lg hover:bg-white/5 transition-colors">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mt-0.5 text-purple-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span>{responsibility}</span>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.7 }}
+            className="bg-zinc-900/50 backdrop-blur-sm rounded-xl border border-white/5 p-6 mb-8"
+          >
+            <h2 className="text-2xl font-semibold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">
+              Outcome
+            </h2>
+            <p className="text-white/70">
+              {project.outcome}
+            </p>
+          </motion.div>
           </div>
-        </div>
-      </section>
-      
-      <Footer />
-    </main>
-  );
-}
+        </section>
+        <Footer />
+      </main>
+    );
+  }
+
