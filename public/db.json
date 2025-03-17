@@ -55,7 +55,7 @@
                 "/bassi.jpg"
             ],
             "liveUrl": "https://school-bus-4csj.vercel.app/",
-            "giturl": "https://github.com/joycewamocho/school-bus",
+            "githubUrl": "https://github.com/joycewamocho/school-bus",
             "featured": true,
             "categories": [
                 "Web Development",
