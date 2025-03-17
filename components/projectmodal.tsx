@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, ArrowRight, ExternalLink } from "lucide-react";
 import Image from "next/image";
@@ -22,6 +22,7 @@ interface Project {
   solution?: string;
   outcome?: string;
   image: string;
+  landingImg?: string[] | string; // Can be an array of images or a single image string
   technologies: Technology[];
   url?: string;
   liveUrl?: string;
@@ -44,6 +45,9 @@ interface ProjectModalProps {
 export const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
   // Use githubUrl if available, otherwise use giturl if available
   const repoUrl = project.githubUrl || project.giturl;
+  
+  // State to track the current image index for the carousel
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
     if (isOpen) {
@@ -56,6 +60,31 @@ export const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) =>
       document.body.classList.remove("overflow-hidden");
     };
   }, [isOpen]);
+  
+  // Effect for image carousel rotation
+  useEffect(() => {
+    // Only set up the interval if landingImg is an array with more than one image
+    if (isOpen && project.landingImg && Array.isArray(project.landingImg) && project.landingImg.length > 1) {
+      const interval = setInterval(() => {
+        setCurrentImageIndex((prevIndex) => 
+          prevIndex === (project.landingImg?.length ?? 0) - 1 ? 0 : prevIndex + 1
+        );
+      }, 5000); // Change image every 5 seconds
+      
+      return () => clearInterval(interval);
+    }
+  }, [isOpen, project.landingImg]);
+  
+  // Helper function to get the current image to display
+  const getCurrentImage = () => {
+    if (!project.landingImg) return null;
+    
+    if (Array.isArray(project.landingImg)) {
+      return project.landingImg.length > 0 ? project.landingImg[currentImageIndex] : null;
+    }
+    
+    return project.landingImg; // If it's a string
+  };
 
   return (
     <AnimatePresence>
@@ -139,6 +168,26 @@ export const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) =>
                   {project.solution && (
                     <div className="mb-6">
                       <h3 className="text-lg font-medium text-indigo-400 mb-2">Solution</h3>
+                      {project.landingImg && (
+                        <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
+                          <Image
+                            src={getCurrentImage() || project.image}
+                            alt={`${project.title} solution`}
+                            fill
+                            className="object-cover"
+                          />
+                          {Array.isArray(project.landingImg) && project.landingImg.length > 1 && (
+                            <div className="absolute bottom-2 left-0 right-0 flex justify-center gap-1">
+                              {project.landingImg.map((_, index) => (
+                                <div 
+                                  key={index} 
+                                  className={`w-2 h-2 rounded-full ${index === currentImageIndex ? 'bg-white' : 'bg-white/50'}`}
+                                />
+                              ))}
+                            </div>
+                          )}
+                        </div>
+                      )}
                       <p className="text-slate-300">{project.solution}</p>
                     </div>
                   )}
