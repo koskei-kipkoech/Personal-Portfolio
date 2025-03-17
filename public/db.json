@@ -26,7 +26,7 @@
             ],
             "solution": "Developed a web-based school minibus booking system that allows parents to book seats for their children on minibuses that follow fixed routes. The platform features an interactive map for viewing available routes and schedules, real-time bus tracking to ensure safe pickup and drop-off, and instant notifications when children are picked up or dropped off. The system includes separate dashboards for parents, administrators, and drivers, enabling efficient management of bookings, routes, and user profiles.",
             "outcome": "The SchoolBasi system has significantly improved school transportation safety and accessibility. Parents report 95% satisfaction with the real-time tracking feature, and school attendance has improved by 27% in pilot areas. The platform has reduced transportation costs for families by 40% through route optimization and shared rides, while providing private bus operators with a 35% increase in efficiency through better booking management.",
-            "image": "/titleimage.jpg",
+            "image": "/schoolbasi.jpg",
             "technologies": [
                 {
                     "name": "Next.js",
@@ -50,7 +50,11 @@
                 }
             ],
             "url": "#",
-            "liveUrl": "school-bus-4csj.vercel.app/",
+            "landingImg": [
+                "/basii.jpg",
+                "/bassi.jpg"
+            ],
+            "liveUrl": "https://school-bus-4csj.vercel.app/",
             "giturl": "https://github.com/joycewamocho/school-bus",
             "featured": true,
             "categories": [
@@ -89,7 +93,7 @@
             ],
             "solution": "Developed a full-stack blog application with a React frontend and Flask backend that addresses the need for a user-friendly yet powerful blogging platform. The system implements at least two one-to-many relationships (users-to-posts and posts-to-comments) and one many-to-many relationship (users-to-favorite-posts) with user-submittable attributes. The backend provides full CRUD operations for posts and comments, with RESTful API endpoints optimized for performance. The frontend features multiple routes via React Router, form validation with Formik, and a responsive design with theme customization options.",
             "outcome": "The Blog Application has been well-received by users looking for a streamlined blogging experience. The platform has achieved a 90% user satisfaction rate, with particular praise for the intuitive interface and responsive design. User engagement metrics show an average session duration of 12 minutes, with 70% of users returning within a week. The authentication system has maintained zero security breaches, while the optimized API endpoints have resulted in page load times under 2 seconds, even with high traffic volumes.",
-            "image": "/titleimage.jpg",
+            "image": "/blog.jpg",
             "technologies": [
                 {
                     "name": "React",
@@ -121,6 +125,10 @@
                 }
             ],
             "url": "#",
+            "landingImg": [
+                "/bblog.jpg",
+                "/blog.jpg"
+            ],
             "liveUrl": "",
             "githubUrl": "https://github.com/koskei-kipkoech/blog-application",
             "featured": true,
@@ -162,7 +170,7 @@
             ],
             "solution": "Developed a React-based recipe application that simplifies the process of finding and saving recipes. The application connects to TheMealDB API to fetch a wide variety of recipes which users can search through using keywords or ingredients. The clean and intuitive UI displays recipes as cards with images and names, with detailed information available on click. Users can save favorite recipes to a local database via JSON Server, filter search results to find exactly what they need, and manage their saved recipes collection by removing items when no longer needed. The responsive design ensures the application works seamlessly across desktop and mobile devices.",
             "outcome": "The Recipe Application has enhanced the culinary exploration experience for users with its intuitive interface and efficient functionality. Users report finding recipes 50% faster compared to traditional methods, and the save feature has led to an 80% increase in recipe retention. The application has achieved a user satisfaction rating of 4.7/5 stars, with particular praise for the search functionality and responsive design. The project successfully demonstrated proficiency in API integration and state management using React, serving as a strong portfolio piece for showcasing frontend development skills.",
-            "image": "/titleimage.jpg",
+            "image": "/recipe.jpg",
             "technologies": [
                 {
                     "name": "React",
@@ -194,6 +202,10 @@
                 }
             ],
             "url": "#",
+            "landingImg": [
+                "/recip.jpg",
+                "/reccip.jpg"
+            ],
             "liveUrl": "https://kipp-recipe-app.netlify.app/",
             "githubUrl": "https://github.com/koskei-kipkoech/Recipe-App",
             "featured": true,
@@ -232,7 +244,7 @@
             ],
             "solution": "Developed a web-based school minibus booking system that allows parents to book seats for their children on minibuses that follow fixed routes. The platform features an interactive map for viewing available routes and schedules, real-time bus tracking to ensure safe pickup and drop-off, and instant notifications when children are picked up or dropped off. The system includes separate dashboards for parents, administrators, and drivers, enabling efficient management of bookings, routes, and user profiles.",
             "outcome": "The SchoolBasi system has significantly improved school transportation safety and accessibility. Parents report 95% satisfaction with the real-time tracking feature, and school attendance has improved by 27% in pilot areas. The platform has reduced transportation costs for families by 40% through route optimization and shared rides, while providing private bus operators with a 35% increase in efficiency through better booking management.",
-            "image": "/titleimage.jpg",
+            "image": "/schoolbasi.jpg",
             "technologies": [
                 {
                     "name": "Next.js",
@@ -256,8 +268,12 @@
                 }
             ],
             "url": "#",
-            "liveUrl": "school-bus-4csj.vercel.app/",
-            "giturl": "git://github",
+            "landingImg": [
+                "/basii.jpg",
+                "/bassi.jpg"
+            ],
+            "liveUrl": "https://school-bus-4csj.vercel.app/",
+            "giturl": "https://github.com/joycewamocho/school-bus",
             "featured": true,
             "categories": [
                 "Web Development",
@@ -295,7 +311,7 @@
             ],
             "solution": "Developed a full-stack blog application with a React frontend and Flask backend that addresses the need for a user-friendly yet powerful blogging platform. The system implements at least two one-to-many relationships (users-to-posts and posts-to-comments) and one many-to-many relationship (users-to-favorite-posts) with user-submittable attributes. The backend provides full CRUD operations for posts and comments, with RESTful API endpoints optimized for performance. The frontend features multiple routes via React Router, form validation with Formik, and a responsive design with theme customization options.",
             "outcome": "The Blog Application has been well-received by users looking for a streamlined blogging experience. The platform has achieved a 90% user satisfaction rate, with particular praise for the intuitive interface and responsive design. User engagement metrics show an average session duration of 12 minutes, with 70% of users returning within a week. The authentication system has maintained zero security breaches, while the optimized API endpoints have resulted in page load times under 2 seconds, even with high traffic volumes.",
-            "image": "/titleimage.jpg",
+            "image": "/blog.jpg",
             "technologies": [
                 {
                     "name": "React",
@@ -327,6 +343,9 @@
                 }
             ],
             "url": "#",
+            "landingImg": [
+                "/bblog.jpg"
+            ],
             "liveUrl": "",
             "githubUrl": "https://github.com/koskei-kipkoech/blog-application",
             "featured": true,
@@ -339,80 +358,6 @@
         },
         {
             "id": 3,
-            "title": "My Fashion Web Application",
-            "description": "Interactive fashion e-commerce platform with product filtering, favorites, and comments",
-            "shortDescription": "Responsive fashion store with search, filter, and user interaction features",
-            "detailedDescription": "An interactive fashion e-commerce platform that allows users to browse, filter, and search for clothes by season, gender, or name. The application provides a seamless shopping experience with features such as product favorites, detailed product views, and a comment system. Built with HTML, CSS, and JavaScript, the app offers a responsive design with Swiper carousels for gallery and comments display, pagination for product browsing, and local storage for saving user preferences.",
-            "mvpFeatures": {
-                "timeline": "5-Week Timeline",
-                "features": [
-                    "Product Display with Pagination",
-                    "Search and Filter Functionality (by keyword, season, gender)",
-                    "Favorites Management (add, increase/decrease quantity, remove)",
-                    "Comment Section for Product Reviews",
-                    "Swiper Carousel for Featured Products and Comments",
-                    "Local Storage for Favorites and Gallery Likes",
-                    "Pop-up Contact Form"
-                ]
-            },
-            "problemStatement": "Online fashion retail often suffers from cluttered interfaces and limited search capabilities, making it difficult for users to find products that match their preferences. Many e-commerce platforms lack intuitive navigation or user engagement features, resulting in poor user experiences and reduced conversion rates. Additionally, mobile responsiveness is often an afterthought, limiting accessibility across different devices.",
-            "responsibilities": [
-                "Front-end development using HTML, CSS, and JavaScript",
-                "Implementation of product display with pagination",
-                "Development of search and filter functionality",
-                "Integration of Swiper carousel for enhanced user experience",
-                "Creation of favorites system with quantity management",
-                "Implementation of comment section for product reviews",
-                "Local storage integration for user preferences",
-                "Design and implementation of responsive layout",
-                "Deployment of the application using Render"
-            ],
-            "solution": "Developed a responsive fashion e-commerce platform that enhances the online shopping experience through intuitive navigation and robust product discovery features. The application implements a clean, user-friendly interface with pagination to manage product display efficiently. A comprehensive search and filter system allows users to quickly find products by name, season, or gender. The favorites functionality enables users to save and manage their preferred items with quantity controls. The platform also encourages user engagement through a comment section and increases visual appeal with Swiper carousels for featured products and reviews.",
-            "outcome": "The Fashion Web Application has significantly improved user engagement with the average session duration increasing by 35%. The filter and search features have reduced product discovery time by 60%, while the favorites system has increased return visits by 45%. User feedback has been overwhelmingly positive, with 92% of users rating the interface as intuitive and easy to navigate. The responsive design has also contributed to a 30% increase in mobile traffic, demonstrating the application's cross-device accessibility.",
-            "image": "/titleimage.jpg",
-            "technologies": [
-                {
-                    "name": "HTML5",
-                    "icon": "📄"
-                },
-                {
-                    "name": "CSS3",
-                    "icon": "🎨"
-                },
-                {
-                    "name": "JavaScript",
-                    "icon": "📜"
-                },
-                {
-                    "name": "JSON",
-                    "icon": "🗃️"
-                },
-                {
-                    "name": "Swiper",
-                    "icon": "↔️"
-                },
-                {
-                    "name": "LocalStorage",
-                    "icon": "💾"
-                },
-                {
-                    "name": "Render",
-                    "icon": "🚀"
-                }
-            ],
-            "url": "#",
-            "liveUrl": "https://my-fashion-application.onrender.com",
-            "githubUrl": "https://github.com/koskei-kipkoech/My-Fashion-Application",
-            "featured": true,
-            "categories": [
-                "Front-End Development",
-                "E-Commerce",
-                "Fashion",
-                "User Experience"
-            ]
-        },
-        {
-            "id": 4,
             "title": "Recipe Application",
             "description": "Interactive recipe platform with search, save, and filter functionality",
             "shortDescription": "Web app for discovering and saving recipes with search and filter capabilities",
@@ -442,7 +387,7 @@
             ],
             "solution": "Developed a React-based recipe application that simplifies the process of finding and saving recipes. The application connects to TheMealDB API to fetch a wide variety of recipes which users can search through using keywords or ingredients. The clean and intuitive UI displays recipes as cards with images and names, with detailed information available on click. Users can save favorite recipes to a local database via JSON Server, filter search results to find exactly what they need, and manage their saved recipes collection by removing items when no longer needed. The responsive design ensures the application works seamlessly across desktop and mobile devices.",
             "outcome": "The Recipe Application has enhanced the culinary exploration experience for users with its intuitive interface and efficient functionality. Users report finding recipes 50% faster compared to traditional methods, and the save feature has led to an 80% increase in recipe retention. The application has achieved a user satisfaction rating of 4.7/5 stars, with particular praise for the search functionality and responsive design. The project successfully demonstrated proficiency in API integration and state management using React, serving as a strong portfolio piece for showcasing frontend development skills.",
-            "image": "/titleimage.jpg",
+            "image": "/recipe.jpg",
             "technologies": [
                 {
                     "name": "React",
@@ -474,13 +419,94 @@
                 }
             ],
             "url": "#",
-            "liveUrl": "kipp-recipe-app.netlify.app",
+            "landingImg": [
+                "/recip.jpg",
+                "/reccip.jpg"
+            ],
+            "liveUrl": "https://kipp-recipe-app.netlify.app",
             "githubUrl": "https://github.com/koskei-kipkoech/Recipe-App",
             "featured": true,
             "categories": [
                 "Frontend Development",
                 "API Integration",
                 "Food & Culinary",
+                "User Experience"
+            ]
+        },
+        {
+            "id": 4,
+            "title": "My Fashion Web Application",
+            "description": "Interactive fashion e-commerce platform with product filtering, favorites, and comments",
+            "shortDescription": "Responsive fashion store with search, filter, and user interaction features",
+            "detailedDescription": "An interactive fashion e-commerce platform that allows users to browse, filter, and search for clothes by season, gender, or name. The application provides a seamless shopping experience with features such as product favorites, detailed product views, and a comment system. Built with HTML, CSS, and JavaScript, the app offers a responsive design with Swiper carousels for gallery and comments display, pagination for product browsing, and local storage for saving user preferences.",
+            "mvpFeatures": {
+                "timeline": "5-Week Timeline",
+                "features": [
+                    "Product Display with Pagination",
+                    "Search and Filter Functionality (by keyword, season, gender)",
+                    "Favorites Management (add, increase/decrease quantity, remove)",
+                    "Comment Section for Product Reviews",
+                    "Swiper Carousel for Featured Products and Comments",
+                    "Local Storage for Favorites and Gallery Likes",
+                    "Pop-up Contact Form"
+                ]
+            },
+            "problemStatement": "Online fashion retail often suffers from cluttered interfaces and limited search capabilities, making it difficult for users to find products that match their preferences. Many e-commerce platforms lack intuitive navigation or user engagement features, resulting in poor user experiences and reduced conversion rates. Additionally, mobile responsiveness is often an afterthought, limiting accessibility across different devices.",
+            "responsibilities": [
+                "Front-end development using HTML, CSS, and JavaScript",
+                "Implementation of product display with pagination",
+                "Development of search and filter functionality",
+                "Integration of Swiper carousel for enhanced user experience",
+                "Creation of favorites system with quantity management",
+                "Implementation of comment section for product reviews",
+                "Local storage integration for user preferences",
+                "Design and implementation of responsive layout",
+                "Deployment of the application using Render"
+            ],
+            "solution": "Developed a responsive fashion e-commerce platform that enhances the online shopping experience through intuitive navigation and robust product discovery features. The application implements a clean, user-friendly interface with pagination to manage product display efficiently. A comprehensive search and filter system allows users to quickly find products by name, season, or gender. The favorites functionality enables users to save and manage their preferred items with quantity controls. The platform also encourages user engagement through a comment section and increases visual appeal with Swiper carousels for featured products and reviews.",
+            "outcome": "The Fashion Web Application has significantly improved user engagement with the average session duration increasing by 35%. The filter and search features have reduced product discovery time by 60%, while the favorites system has increased return visits by 45%. User feedback has been overwhelmingly positive, with 92% of users rating the interface as intuitive and easy to navigate. The responsive design has also contributed to a 30% increase in mobile traffic, demonstrating the application's cross-device accessibility.",
+            "image": "/clothes.jpg",
+            "technologies": [
+                {
+                    "name": "HTML5",
+                    "icon": "📄"
+                },
+                {
+                    "name": "CSS3",
+                    "icon": "🎨"
+                },
+                {
+                    "name": "JavaScript",
+                    "icon": "📜"
+                },
+                {
+                    "name": "JSON",
+                    "icon": "🗃️"
+                },
+                {
+                    "name": "Swiper",
+                    "icon": "↔️"
+                },
+                {
+                    "name": "LocalStorage",
+                    "icon": "💾"
+                },
+                {
+                    "name": "Render",
+                    "icon": "🚀"
+                }
+            ],
+            "url": "#",
+            "landingImg": [
+                "/kfashion.jpg"
+            ],
+            "liveUrl": "https://koskei-kipkoech.github.io/My-Fashion-Application/",
+            "githubUrl": "https://github.com/koskei-kipkoech/My-Fashion-Application",
+            "featured": true,
+            "categories": [
+                "Front-End Development",
+                "E-Commerce",
+                "Fashion",
                 "User Experience"
             ]
         },
@@ -514,7 +540,7 @@
             ],
             "solution": "Developed a comprehensive blog application that bridges the gap between personal content creation and news consumption. The platform implements secure user authentication to protect user data and content, while providing intuitive interfaces for creating, editing, and managing blog posts. The integration with a third-party news API delivers relevant, up-to-date information directly within the application, allowing users to reference current events or find inspiration for their content without leaving the platform. The responsive design ensures a consistent experience across all devices, making content creation and consumption equally accessible on desktop or mobile.",
             "outcome": "The Blog Application has successfully created a unified platform for content creation and news consumption with notable user engagement. The authentication system has maintained zero security breaches while managing hundreds of user accounts. The platform has seen a 40% increase in user time spent compared to traditional blog platforms, attributable to the seamless integration of personal content and current news. The responsive design has resulted in equal usage across desktop and mobile devices, with mobile engagement increasing by 55% compared to industry averages for similar platforms.",
-            "image": "/titleimage.jpg",
+            "image": "/newblog.jpg",
             "technologies": [
                 {
                     "name": "React",
@@ -546,6 +572,10 @@
                 }
             ],
             "url": "#",
+            "landingImg": [
+                "/blogg.jpg",
+                "/newblogg.jpg"
+            ],
             "liveUrl": "",
             "githubUrl": "https://github.com/koskei-kipkoech/blog-application",
             "featured": true,
@@ -588,7 +618,7 @@
             ],
             "solution": "Developed a comprehensive Learning Management System tailored specifically for primary education environments. The platform features distinct modules for different user roles, including student profiles with simplified navigation, teacher dashboards for course management and student assessment, and parent portals for monitoring progress. The LMS centralizes learning materials in an organized, categorized library that makes resources easily accessible to both teachers and students. The assignment system streamlines the creation, distribution, submission, and grading workflow, while the progress tracking module provides valuable insights into individual and class-wide learning trends.",
             "outcome": "The Primary School LMS has transformed traditional learning methods by creating a centralized, digital education ecosystem. Teachers report saving an average of 5 hours per week on administrative tasks, allowing more focus on instruction and student engagement. Student assignment completion rates have increased by 25%, while parent engagement with their children's education has grown by 40%. The age-appropriate design has resulted in high adoption rates, with 95% of students able to navigate the platform independently after initial orientation, demonstrating the system's success in creating an efficient and engaging educational process.",
-            "image": "/titleimage.jpg",
+            "image": "/lms.jpg",
             "technologies": [
                 {
                     "name": "Python",
@@ -620,6 +650,10 @@
                 }
             ],
             "url": "#",
+            "landingImg": [
+                "/bblog.jpg",
+                "/blogg.jpg"
+            ],
             "liveUrl": "",
             "githubUrl": "https://github.com/koskei-kipkoech/primary-school-lms",
             "featured": true,
@@ -662,7 +696,7 @@
             ],
             "solution": "Developed a unified Full-Stack application that bridges the gap between note-taking and event management through an intuitive, secure platform. The React frontend delivers a responsive user experience with seamless transitions between features, while the Flask backend with SQLAlchemy ensures data persistence and integrity. The JWT authentication system provides robust security, protecting user data while enabling personalized experiences. The note management system includes complete CRUD operations with the added ability to pin important notes, while the event tracking feature allows users to organize their schedule efficiently.",
             "outcome": "The Notes and Events Application has transformed personal organization by providing a centralized platform for information management. Users report saving significant time through the integration of notes and events in a single secure application. The note pinning feature has proven particularly valuable, with users reporting improved prioritization of important information. The secure authentication system has gained positive feedback for its balance of security and user experience, while the responsive design ensures consistent functionality across various devices and screen sizes.",
-            "image": "/titleimage.jpg",
+            "image": "/notes.jpg",
             "technologies": [
                 {
                     "name": "React",
@@ -698,6 +732,9 @@
                 }
             ],
             "url": "#",
+            "landingImg": [
+                "/clothes.jpg"
+            ],
             "liveUrl": "",
             "githubUrl": "https://github.com/yourusername/notes-events-app",
             "featured": true,
