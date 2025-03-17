@@ -588,6 +588,88 @@
         },
         {
             "id": 6,
+            "title": "Notes and Events Application",
+            "description": "Full-Stack application for personal note-taking and event scheduling with secure authentication",
+            "shortDescription": "Seamless note-taking and event management platform with secure user experiences",
+            "detailedDescription": "A comprehensive Full-Stack application designed to streamline personal organization through intuitive note-taking and event scheduling features. The platform employs React for a responsive frontend experience and Flask with SQLAlchemy for robust backend functionality. Users benefit from secure JWT authentication, complete CRUD functionality for managing notes, and intuitive event tracking capabilities. The note pinning feature enables prioritization of important information, enhancing overall user productivity and organization.",
+            "mvpFeatures": {
+                "timeline": "6-Week Timeline",
+                "features": [
+                    "User Authentication System",
+                    "Note Creation and Management",
+                    "Event Scheduling and Tracking",
+                    "Note Pinning Functionality",
+                    "Responsive User Interface",
+                    "Secure API Endpoints",
+                    "User Profile Management",
+                    "Cross-device Synchronization"
+                ]
+            },
+            "problemStatement": "Personal organization often suffers from fragmented approaches, with notes, reminders, and events scattered across multiple platforms or physical mediums. This creates inefficiency in information retrieval and management, leading to missed events, lost information, and reduced productivity. Existing solutions typically lack seamless integration between note-taking and event management or fail to provide adequate security measures for personal data.",
+            "responsibilities": [
+                "Frontend development using React and modern JavaScript",
+                "Backend implementation with Flask and SQLAlchemy",
+                "Design and implementation of RESTful API endpoints",
+                "JWT authentication system integration",
+                "Database schema design and implementation",
+                "CRUD functionality development for notes management",
+                "Event tracking system implementation",
+                "Responsive UI/UX design with HTML and CSS"
+            ],
+            "solution": "Developed a unified Full-Stack application that bridges the gap between note-taking and event management through an intuitive, secure platform. The React frontend delivers a responsive user experience with seamless transitions between features, while the Flask backend with SQLAlchemy ensures data persistence and integrity. The JWT authentication system provides robust security, protecting user data while enabling personalized experiences. The note management system includes complete CRUD operations with the added ability to pin important notes, while the event tracking feature allows users to organize their schedule efficiently.",
+            "outcome": "The Notes and Events Application has transformed personal organization by providing a centralized platform for information management. Users report saving significant time through the integration of notes and events in a single secure application. The note pinning feature has proven particularly valuable, with users reporting improved prioritization of important information. The secure authentication system has gained positive feedback for its balance of security and user experience, while the responsive design ensures consistent functionality across various devices and screen sizes.",
+            "image": "/notes.jpg",
+            "technologies": [
+                {
+                    "name": "React",
+                    "icon": "⚛️"
+                },
+                {
+                    "name": "JavaScript",
+                    "icon": "📜"
+                },
+                {
+                    "name": "HTML/CSS",
+                    "icon": "🎨"
+                },
+                {
+                    "name": "Flask",
+                    "icon": "🌶️"
+                },
+                {
+                    "name": "SQLAlchemy",
+                    "icon": "🗃️"
+                },
+                {
+                    "name": "Python",
+                    "icon": "🐍"
+                },
+                {
+                    "name": "JWT",
+                    "icon": "🔐"
+                },
+                {
+                    "name": "RESTful API",
+                    "icon": "🔄"
+                }
+            ],
+            "url": "#",
+            "landingImg": [
+                "/notte.jpg",
+                "/notes.jpg"
+            ],
+            "liveUrl": "",
+            "githubUrl": "https://github.com/yourusername/notes-events-app",
+            "featured": true,
+            "categories": [
+                "Full-Stack Development",
+                "Productivity Tools",
+                "User Experience Design",
+                "Web Application"
+            ]
+        },
+        {
+            "id": 7,
             "title": "Primary School LMS",
             "description": "Learning Management System designed for primary education with course management and progress tracking",
             "shortDescription": "Comprehensive educational platform for streamlining primary school teaching and learning",
@@ -665,84 +747,84 @@
             ]
         },
         {
-            "id": 7,
-            "title": "Notes and Events Application",
-            "description": "Full-Stack application for personal note-taking and event scheduling with secure authentication",
-            "shortDescription": "Seamless note-taking and event management platform with secure user experiences",
-            "detailedDescription": "A comprehensive Full-Stack application designed to streamline personal organization through intuitive note-taking and event scheduling features. The platform employs React for a responsive frontend experience and Flask with SQLAlchemy for robust backend functionality. Users benefit from secure JWT authentication, complete CRUD functionality for managing notes, and intuitive event tracking capabilities. The note pinning feature enables prioritization of important information, enhancing overall user productivity and organization.",
+            "id": 8,
+            "title": "Recipe Management CLI Application",
+            "description": "Command-Line Interface application for managing recipes, categories, and ingredients with SQLAlchemy and SQLite",
+            "shortDescription": "Efficient recipe organization through an intuitive command-line interface",
+            "detailedDescription": "A comprehensive Command-Line Interface (CLI) application built to streamline recipe management through intuitive category, recipe, and ingredient organization. The application leverages Python with SQLAlchemy ORM for robust database interactions, providing users with a powerful yet simple interface for culinary organization. Features include complete CRUD operations for recipes, categories, and ingredients, along with search capabilities and random recipe suggestions. The application uses Click for user-friendly CLI interactions and Alembic for smooth database migrations, ensuring data integrity and persistence.",
             "mvpFeatures": {
-                "timeline": "6-Week Timeline",
+                "timeline": "4-Week Timeline",
                 "features": [
-                    "User Authentication System",
-                    "Note Creation and Management",
-                    "Event Scheduling and Tracking",
-                    "Note Pinning Functionality",
-                    "Responsive User Interface",
-                    "Secure API Endpoints",
-                    "User Profile Management",
-                    "Cross-device Synchronization"
+                    "Category Management System",
+                    "Recipe CRUD Operations",
+                    "Ingredient Management",
+                    "Recipe Search Functionality",
+                    "Random Recipe Suggestions",
+                    "Statistics Dashboard",
+                    "Database Initialization & Migration",
+                    "User-Friendly CLI Interface"
                 ]
             },
-            "problemStatement": "Personal organization often suffers from fragmented approaches, with notes, reminders, and events scattered across multiple platforms or physical mediums. This creates inefficiency in information retrieval and management, leading to missed events, lost information, and reduced productivity. Existing solutions typically lack seamless integration between note-taking and event management or fail to provide adequate security measures for personal data.",
+            "problemStatement": "Home cooks and culinary enthusiasts often struggle with organizing their growing collection of recipes, ingredients, and cooking categories. Traditional paper-based systems become unwieldy as collections grow, while many digital solutions require complex setup or internet connectivity. This leads to difficulty in finding specific recipes, tracking ingredients, and maintaining an organized culinary library, ultimately resulting in a frustrating cooking experience and reduced kitchen efficiency.",
             "responsibilities": [
-                "Frontend development using React and modern JavaScript",
-                "Backend implementation with Flask and SQLAlchemy",
-                "Design and implementation of RESTful API endpoints",
-                "JWT authentication system integration",
-                "Database schema design and implementation",
-                "CRUD functionality development for notes management",
-                "Event tracking system implementation",
-                "Responsive UI/UX design with HTML and CSS"
+                "Python development with SQLAlchemy ORM integration",
+                "Database schema design and implementation with SQLite",
+                "CLI interface development using Click library",
+                "Implementation of CRUD operations for recipes, categories, and ingredients",
+                "Search functionality and random suggestion algorithms",
+                "Migration system implementation with Alembic",
+                "Statistical analysis and dashboard creation",
+                "User experience optimization for command-line environment"
             ],
-            "solution": "Developed a unified Full-Stack application that bridges the gap between note-taking and event management through an intuitive, secure platform. The React frontend delivers a responsive user experience with seamless transitions between features, while the Flask backend with SQLAlchemy ensures data persistence and integrity. The JWT authentication system provides robust security, protecting user data while enabling personalized experiences. The note management system includes complete CRUD operations with the added ability to pin important notes, while the event tracking feature allows users to organize their schedule efficiently.",
-            "outcome": "The Notes and Events Application has transformed personal organization by providing a centralized platform for information management. Users report saving significant time through the integration of notes and events in a single secure application. The note pinning feature has proven particularly valuable, with users reporting improved prioritization of important information. The secure authentication system has gained positive feedback for its balance of security and user experience, while the responsive design ensures consistent functionality across various devices and screen sizes.",
-            "image": "/notes.jpg",
+            "solution": "Developed a streamlined CLI application that organizes recipes, ingredients, and categories through an intuitive command-line interface. The application uses SQLAlchemy with SQLite to provide robust data persistence without requiring internet connectivity. The Click library enables user-friendly interaction through guided commands, while Alembic ensures smooth database migrations. The application allows users to perform complete CRUD operations on recipes, categories, and ingredients, with additional features like search functionality and random recipe suggestions enhancing the user experience. The statistics dashboard provides insights into the user's culinary library, promoting better organization and discovery.",
+            "outcome": "The Recipe Management CLI Application has transformed recipe organization for home cooks and culinary enthusiasts. Users report significant time savings when searching for recipes and planning meals, with the category system enabling efficient organization of growing recipe collections. The ingredient management feature has proven particularly valuable for inventory tracking and shopping list creation. The command-line interface has been praised for its simplicity and efficiency, allowing quick recipe additions and modifications even during cooking sessions. The random recipe suggestion feature has encouraged users to explore their existing recipe collections, reducing meal planning fatigue.",
+            "image": "/clin.jpg",
             "technologies": [
                 {
-                    "name": "React",
-                    "icon": "⚛️"
-                },
-                {
-                    "name": "JavaScript",
-                    "icon": "📜"
-                },
-                {
-                    "name": "HTML/CSS",
-                    "icon": "🎨"
-                },
-                {
-                    "name": "Flask",
-                    "icon": "🌶️"
+                    "name": "Python",
+                    "icon": "🐍"
                 },
                 {
                     "name": "SQLAlchemy",
                     "icon": "🗃️"
                 },
                 {
-                    "name": "Python",
-                    "icon": "🐍"
+                    "name": "SQLite",
+                    "icon": "💾"
                 },
                 {
-                    "name": "JWT",
-                    "icon": "🔐"
+                    "name": "Click",
+                    "icon": "🖱️"
                 },
                 {
-                    "name": "RESTful API",
+                    "name": "Alembic",
                     "icon": "🔄"
+                },
+                {
+                    "name": "CLI",
+                    "icon": "⌨️"
+                },
+                {
+                    "name": "Git",
+                    "icon": "🔀"
+                },
+                {
+                    "name": "Pipenv",
+                    "icon": "📦"
                 }
             ],
             "url": "#",
             "landingImg": [
-                "/clothes.jpg"
+                "/cli.jpg"
             ],
             "liveUrl": "",
-            "githubUrl": "https://github.com/yourusername/notes-events-app",
+            "githubUrl": "https://github.com/yourusername/recipe-management-cli",
             "featured": true,
             "categories": [
-                "Full-Stack Development",
-                "Productivity Tools",
-                "User Experience Design",
-                "Web Application"
+                "Backend Development",
+                "CLI Applications",
+                "Database Management",
+                "Python Development"
             ]
         }
     ]
