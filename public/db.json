@@ -70,7 +70,7 @@
             "shortDescription": "Interactive blog platform with user authentication and content management",
             "detailedDescription": "A comprehensive full-stack blog application built with React for the frontend and Flask with SQLAlchemy for the backend. The platform enables users to create accounts, write blog posts, comment on others' posts, and manage their content through a responsive interface. Features include JWT authentication for secure user sessions, complete CRUD operations for posts and comments, a dark/light mode toggle for improved user experience, and optimized RESTful APIs for efficient data flow between client and server.",
             "mvpFeatures": {
-                "timeline": "6-Week Timeline",
+                "timeline": "1-Week Timeline",
                 "features": [
                     "User Authentication (Registration, Login, JWT-based sessions)",
                     "Blog Post Management (Create, Read, Update, Delete)",
@@ -146,7 +146,7 @@
             "shortDescription": "Web app for discovering and saving recipes with search and filter capabilities",
             "detailedDescription": "A React-based web application that fetches recipes from TheMealDB API and allows users to search, save, and filter recipes based on keywords or ingredients. The application provides an intuitive user interface with recipe cards displaying images, names, and links to detailed information. Users can save their favorite recipes with data persistence implemented through JSON Server, filter search results to narrow down options, and remove saved recipes when no longer needed. The responsive design ensures a seamless experience across all devices.",
             "mvpFeatures": {
-                "timeline": "4-Week Timeline",
+                "timeline": "1-Week Timeline",
                 "features": [
                     "API Integration with TheMealDB",
                     "Search Functionality by Keywords or Ingredients",
@@ -288,7 +288,7 @@
             "shortDescription": "Interactive blog platform with user authentication and content management",
             "detailedDescription": "A comprehensive full-stack blog application built with React for the frontend and Flask with SQLAlchemy for the backend. The platform enables users to create accounts, write blog posts, comment on others' posts, and manage their content through a responsive interface. Features include JWT authentication for secure user sessions, complete CRUD operations for posts and comments, a dark/light mode toggle for improved user experience, and optimized RESTful APIs for efficient data flow between client and server.",
             "mvpFeatures": {
-                "timeline": "6-Week Timeline",
+                "timeline": "1-Week Timeline",
                 "features": [
                     "User Authentication (Registration, Login, JWT-based sessions)",
                     "Blog Post Management (Create, Read, Update, Delete)",
@@ -363,7 +363,7 @@
             "shortDescription": "Web app for discovering and saving recipes with search and filter capabilities",
             "detailedDescription": "A React-based web application that fetches recipes from TheMealDB API and allows users to search, save, and filter recipes based on keywords or ingredients. The application provides an intuitive user interface with recipe cards displaying images, names, and links to detailed information. Users can save their favorite recipes with data persistence implemented through JSON Server, filter search results to narrow down options, and remove saved recipes when no longer needed. The responsive design ensures a seamless experience across all devices.",
             "mvpFeatures": {
-                "timeline": "4-Week Timeline",
+                "timeline": "1-Week Timeline",
                 "features": [
                     "API Integration with TheMealDB",
                     "Search Functionality by Keywords or Ingredients",
@@ -440,7 +440,7 @@
             "shortDescription": "Responsive fashion store with search, filter, and user interaction features",
             "detailedDescription": "An interactive fashion e-commerce platform that allows users to browse, filter, and search for clothes by season, gender, or name. The application provides a seamless shopping experience with features such as product favorites, detailed product views, and a comment system. Built with HTML, CSS, and JavaScript, the app offers a responsive design with Swiper carousels for gallery and comments display, pagination for product browsing, and local storage for saving user preferences.",
             "mvpFeatures": {
-                "timeline": "5-Week Timeline",
+                "timeline": "1-Week Timeline",
                 "features": [
                     "Product Display with Pagination",
                     "Search and Filter Functionality (by keyword, season, gender)",
@@ -517,7 +517,7 @@
             "shortDescription": "Interactive blog platform with user authentication and real-time news updates",
             "detailedDescription": "A feature-rich blog application that combines user-generated content with real-time news integration through a third-party API. The platform offers secure user authentication, complete CRUD functionality for blog posts and comments, and a personalized user experience. Built with React for the frontend and MongoDB for data storage, the application delivers a responsive interface that adapts seamlessly across devices while maintaining fast performance and data integrity.",
             "mvpFeatures": {
-                "timeline": "5-Week Timeline",
+                "timeline": "2-Week Timeline",
                 "features": [
                     "User Authentication System (Registration, Login, Authorization)",
                     "Blog Post Management (Create, Read, Update, Delete)",
@@ -593,7 +593,7 @@
             "shortDescription": "Seamless note-taking and event management platform with secure user experiences",
             "detailedDescription": "A comprehensive Full-Stack application designed to streamline personal organization through intuitive note-taking and event scheduling features. The platform employs React for a responsive frontend experience and Flask with SQLAlchemy for robust backend functionality. Users benefit from secure JWT authentication, complete CRUD functionality for managing notes, and intuitive event tracking capabilities. The note pinning feature enables prioritization of important information, enhancing overall user productivity and organization.",
             "mvpFeatures": {
-                "timeline": "6-Week Timeline",
+                "timeline": "1-Week Timeline",
                 "features": [
                     "User Authentication System",
                     "Note Creation and Management",
@@ -675,7 +675,7 @@
             "shortDescription": "Comprehensive educational platform for streamlining primary school teaching and learning",
             "detailedDescription": "A specialized Learning Management System (LMS) designed specifically for primary schools to modernize and streamline educational processes. The platform facilitates efficient course management, assignment distribution, and student progress tracking while providing dedicated spaces for both students and teachers. This system transforms traditional learning methods by centralizing educational resources, enabling personalized learning paths, and creating a more engaging educational experience for young learners.",
             "mvpFeatures": {
-                "timeline": "8-Week Timeline",
+                "timeline": "4-Week Timeline",
                 "features": [
                     "Student Profile Management",
                     "Teacher Account Dashboard",
@@ -753,7 +753,7 @@
             "shortDescription": "Efficient recipe organization through an intuitive command-line interface",
             "detailedDescription": "A comprehensive Command-Line Interface (CLI) application built to streamline recipe management through intuitive category, recipe, and ingredient organization. The application leverages Python with SQLAlchemy ORM for robust database interactions, providing users with a powerful yet simple interface for culinary organization. Features include complete CRUD operations for recipes, categories, and ingredients, along with search capabilities and random recipe suggestions. The application uses Click for user-friendly CLI interactions and Alembic for smooth database migrations, ensuring data integrity and persistence.",
             "mvpFeatures": {
-                "timeline": "4-Week Timeline",
+                "timeline": "1-Week Timeline",
                 "features": [
                     "Category Management System",
                     "Recipe CRUD Operations",
