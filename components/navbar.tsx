@@ -44,6 +44,7 @@ function Navbar() {
   const menuItems = [
     { name: "About", icon: <User size={18} /> },
     { name: "Projects", icon: <Briefcase size={18} /> },
+    { name: "MyAproach", icon: <Briefcase size={18} /> },
     { name: "Skills", icon: <Code size={18} /> },
     { name: "Experience", icon: <Award size={18} /> },
     { name: "Education", icon: <GraduationCap size={18} /> },
@@ -94,7 +95,7 @@ function Navbar() {
           {/* Social icons with hover animations */}
           <div className="flex items-center gap-4">
             <a
-              href="https://github.com/koskei-kipkoech"
+              href="c"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white/70 hover:text-white transition-colors duration-200"
