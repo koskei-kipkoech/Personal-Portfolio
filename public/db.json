@@ -727,6 +727,10 @@
                     "icon": "📜"
                 },
                 {
+                    "name": "TypeScript",
+                    "icon": "📜"
+                },
+                {
                     "name": "Flask",
                     "icon": "🌶️"
                 }
