@@ -7,6 +7,7 @@ import Education from "@/components/education"
 import Experience from "@/components/experience"
 import Footer from "@/components/footer"
 import Hero from "@/components/hero"
+import Approach from "@/components/myprocedure"
 import Navbar from "@/components/navbar"
 import { SelectedWork } from "@/components/projectcard"
 import Projects from "@/components/projects"
@@ -22,8 +23,9 @@ export default function Home() {
       <About/>
       <SelectedWork/>
       {/* <ViewAllProjectsButton/> */}
+      <Approach/>
       <Skills/>
-      {/* <Projects/> */}
+      {/* <Projects/> */}      
       <Experience/>
       <Education/>
       <Contact/>
