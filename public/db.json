@@ -715,7 +715,7 @@
                     "icon": "🔄"
                 },
                 {
-                    "name": "SQL",
+                    "name": "SQLite",
                     "icon": "🗃️"
                 },
                 {
@@ -727,17 +727,22 @@
                     "icon": "📜"
                 },
                 {
+                    "name": "TypeScript",
+                    "icon": "📜"
+                },
+                {
                     "name": "Flask",
                     "icon": "🌶️"
                 }
             ],
             "url": "#",
             "landingImg": [
-                "/bblog.jpg",
-                "/blogg.jpg"
+                "/lms1.png",
+                "/lms2.png",
+                "/lms3.png"
             ],
             "liveUrl": "",
-            "githubUrl": "https://github.com/koskei-kipkoech/primary-school-lms",
+            "githubUrl": "https://github.com/koskei-kipkoech/LMS-New-Project",
             "featured": true,
             "categories": [
                 "Education Technology",
