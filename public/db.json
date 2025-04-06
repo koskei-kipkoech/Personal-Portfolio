@@ -25,7 +25,7 @@
                 "Database design and implementation with PostgreSQL"
             ],
             "solution": "Developed a web-based school minibus booking system that allows parents to book seats for their children on minibuses that follow fixed routes. The platform features an interactive map for viewing available routes and schedules, real-time bus tracking to ensure safe pickup and drop-off, and instant notifications when children are picked up or dropped off. The system includes separate dashboards for parents, administrators, and drivers, enabling efficient management of bookings, routes, and user profiles.",
-            "outcome": "The SchoolBasi system has significantly improved school transportation safety and accessibility. Parents report 95% satisfaction with the real-time tracking feature, and school attendance has improved by 27% in pilot areas. The platform has reduced transportation costs for families by 40% through route optimization and shared rides, while providing private bus operators with a 35% increase in efficiency through better booking management.",
+            "outcome": "The SchoolBasi system aims to significantly enhance school transportation safety and accessibility. It is designed to offer real-time tracking features that could achieve high parental satisfaction, with the potential for substantial improvements in school attendance through reliable transport options. The platform seeks to reduce transportation costs for families through optimized routes and shared rides, while aiming to boost efficiency for private bus operators by improving booking management.",
             "image": "/schoolbasi.jpg",
             "technologies": [
                 {
@@ -92,7 +92,7 @@
                 "Integration of dark/light mode theme toggle"
             ],
             "solution": "Developed a full-stack blog application with a React frontend and Flask backend that addresses the need for a user-friendly yet powerful blogging platform. The system implements at least two one-to-many relationships (users-to-posts and posts-to-comments) and one many-to-many relationship (users-to-favorite-posts) with user-submittable attributes. The backend provides full CRUD operations for posts and comments, with RESTful API endpoints optimized for performance. The frontend features multiple routes via React Router, form validation with Formik, and a responsive design with theme customization options.",
-            "outcome": "The Blog Application has been well-received by users looking for a streamlined blogging experience. The platform has achieved a 90% user satisfaction rate, with particular praise for the intuitive interface and responsive design. User engagement metrics show an average session duration of 12 minutes, with 70% of users returning within a week. The authentication system has maintained zero security breaches, while the optimized API endpoints have resulted in page load times under 2 seconds, even with high traffic volumes.",
+            "outcome": "The Blog Application is designed to provide a streamlined blogging experience that could be well-received by users. It aims to deliver an intuitive interface and responsive design that may earn high satisfaction, while seeking to boost engagement through a captivating user experience. The authentication system is built to ensure robust security with no vulnerabilities, and the optimized API endpoints are intended to achieve fast page load times, even under high traffic conditions.",
             "image": "/blog.jpg",
             "technologies": [
                 {
@@ -140,80 +140,100 @@
             ]
         },
         {
-            "id": 3,
-            "title": "Recipe Application",
-            "description": "Interactive recipe platform with search, save, and filter functionality",
-            "shortDescription": "Web app for discovering and saving recipes with search and filter capabilities",
-            "detailedDescription": "A React-based web application that fetches recipes from TheMealDB API and allows users to search, save, and filter recipes based on keywords or ingredients. The application provides an intuitive user interface with recipe cards displaying images, names, and links to detailed information. Users can save their favorite recipes with data persistence implemented through JSON Server, filter search results to narrow down options, and remove saved recipes when no longer needed. The responsive design ensures a seamless experience across all devices.",
+            "id": 4,
+            "title": "Gist Tracker Web Application",
+            "description": "A powerful web application for developers to create, manage, and share code snippets (gists) with a clean, intuitive interface inspired by GitHub Gists.",
+            "shortDescription": "Streamlined code snippet management with social features and multi-language support",
+            "detailedDescription": "Gist Tracker is a modern web application designed for developers to efficiently create, manage, and share code snippets. Built with Next.js and MongoDB, it offers a responsive, intuitive interface with features like user authentication, gist CRUD operations, syntax highlighting for multiple programming languages, and social interactions such as favoriting and commenting. The application integrates Tailwind CSS for a sleek UI with amber and teal accents, and leverages TypeScript for type safety. Users can search and filter gists, manage visibility (public/private), and enjoy a seamless experience across desktop, tablet, and mobile devices.",
             "mvpFeatures": {
                 "timeline": "1-Week Timeline",
                 "features": [
-                    "API Integration with TheMealDB",
-                    "Search Functionality by Keywords or Ingredients",
-                    "Recipe Cards with Images and Details",
-                    "Save Favorite Recipes with Local Persistence",
-                    "Filter Search Results",
-                    "Delete Saved Recipes",
-                    "Responsive Design for All Devices"
+                    "User Authentication (Signup, Login, Logout)",
+                    "Gist CRUD Operations",
+                    "Multi-Language Syntax Highlighting",
+                    "Public/Private Visibility Settings",
+                    "Search and Filter Functionality",
+                    "Favorite Gists Feature",
+                    "Commenting on Public Gists",
+                    "Responsive Design",
+                    "Profile Management"
                 ]
             },
-            "problemStatement": "Food enthusiasts often struggle to discover new recipes or organize their favorite dishes in one place. Existing recipe platforms can be overwhelming with cluttered interfaces and limited search capabilities. Users need a simple yet effective way to find recipes based on specific ingredients they have on hand, save their favorites for future reference, and manage their collection of culinary options without the complexity of traditional recipe sites.",
+            "problemStatement": "Developers often need a convenient way to store, organize, and share code snippets. Existing solutions like GitHub Gists lack advanced social features, custom filtering, or an intuitive UI tailored for quick access and management. Many alternatives are either overly complex or lack offline-ready simplicity, making it harder for developers to maintain a personal code library, collaborate, or discover reusable snippets efficiently.",
             "responsibilities": [
-                "Frontend development using React and JavaScript",
-                "API integration with TheMealDB",
-                "Implementation of search and filter functionality",
-                "Creation of responsive UI with HTML and CSS",
-                "Local data persistence with JSON Server",
-                "State management using React hooks",
-                "Design of recipe card components and detailed view",
-                "Deployment of the application using Render"
+                "Frontend development with Next.js and TypeScript",
+                "UI styling with Tailwind CSS and Radix UI components",
+                "Backend development using Next.js API Routes",
+                "Database design and integration with MongoDB via Mongoose",
+                "Authentication system with JWT and bcrypt",
+                "Form handling and validation with React Hook Form and Zod",
+                "Search and filter algorithm implementation",
+                "Responsive design optimization",
+                "Deployment setup and configuration"
             ],
-            "solution": "Developed a React-based recipe application that simplifies the process of finding and saving recipes. The application connects to TheMealDB API to fetch a wide variety of recipes which users can search through using keywords or ingredients. The clean and intuitive UI displays recipes as cards with images and names, with detailed information available on click. Users can save favorite recipes to a local database via JSON Server, filter search results to find exactly what they need, and manage their saved recipes collection by removing items when no longer needed. The responsive design ensures the application works seamlessly across desktop and mobile devices.",
-            "outcome": "The Recipe Application has enhanced the culinary exploration experience for users with its intuitive interface and efficient functionality. Users report finding recipes 50% faster compared to traditional methods, and the save feature has led to an 80% increase in recipe retention. The application has achieved a user satisfaction rating of 4.7/5 stars, with particular praise for the search functionality and responsive design. The project successfully demonstrated proficiency in API integration and state management using React, serving as a strong portfolio piece for showcasing frontend development skills.",
-            "image": "/recipe.jpg",
+            "solution": "Gist Tracker addresses these challenges by providing a web-based platform where developers can sign up, log in, and manage their code snippets effortlessly. Built with Next.js for server-side rendering and API routes, it uses MongoDB for persistent storage and Mongoose for data modeling. The application supports creating, editing, and deleting gists with rich text descriptions and syntax highlighting, alongside public/private visibility options. Social features like favoriting and commenting foster community engagement, while a robust search and filter system ensures quick access to snippets. Tailwind CSS and Radix UI deliver a modern, responsive design that works across devices.",
+            "outcome": "Gist Tracker aims to streamline code snippet management for developers by providing a user-friendly alternative to traditional gist platforms. It is designed to allow effortless organization of snippets with custom visibility, exploration of public gists, and engagement through favorites and comments. The responsive design ensures accessibility across devices, while the search and filter features are intended to save time when locating specific code. The application seeks to enhance productivity and enjoyment for developers sharing and revisiting their work, with a modern UI crafted to boost overall satisfaction.",
+            "image": "/favs.png",
             "technologies": [
                 {
-                    "name": "React",
-                    "icon": "⚛️"
+                    "name": "Next.js",
+                    "icon": "⚡"
                 },
                 {
-                    "name": "JavaScript",
-                    "icon": "📜"
+                    "name": "TypeScript",
+                    "icon": "📝"
                 },
                 {
-                    "name": "HTML5",
-                    "icon": "📄"
-                },
-                {
-                    "name": "CSS3",
+                    "name": "Tailwind CSS",
                     "icon": "🎨"
                 },
                 {
-                    "name": "JSON Server",
-                    "icon": "🗃️"
+                    "name": "MongoDB",
+                    "icon": "🍃"
                 },
                 {
-                    "name": "TheMealDB API",
-                    "icon": "🍽️"
+                    "name": "Mongoose",
+                    "icon": "🦠"
                 },
                 {
-                    "name": "Render",
-                    "icon": "🚀"
+                    "name": "JWT",
+                    "icon": "🔒"
+                },
+                {
+                    "name": "bcrypt",
+                    "icon": "🔐"
+                },
+                {
+                    "name": "React Hook Form",
+                    "icon": "📋"
+                },
+                {
+                    "name": "Zod",
+                    "icon": "✅"
+                },
+                {
+                    "name": "Radix UI",
+                    "icon": "🧩"
                 }
             ],
             "url": "#",
             "landingImg": [
-                "/recip.jpg",
-                "/reccip.jpg"
+                "/favs.png",
+                "/favne.png",
+                "/gall.png",
+                "/land.png",
+                "/log.png",
+                "/sig.png"
             ],
-            "liveUrl": "https://kipp-recipe-app.netlify.app/",
-            "githubUrl": "https://github.com/koskei-kipkoech/Recipe-App",
+            "liveUrl": "https://patrick-gist-tracker-app.vercel.app/",
+            "githubUrl": "https://github.com/koskei-kipkoech/Gist-Tracker-App",
             "featured": true,
             "categories": [
+                "Full-Stack Development",
+                "Web Applications",
+                "Database Management",
                 "Frontend Development",
-                "API Integration",
-                "Food & Culinary",
-                "User Experience"
+                "Backend Development"
             ]
         }
     ],
@@ -243,7 +263,7 @@
                 "Database design and implementation with PostgreSQL"
             ],
             "solution": "Developed a web-based school minibus booking system that allows parents to book seats for their children on minibuses that follow fixed routes. The platform features an interactive map for viewing available routes and schedules, real-time bus tracking to ensure safe pickup and drop-off, and instant notifications when children are picked up or dropped off. The system includes separate dashboards for parents, administrators, and drivers, enabling efficient management of bookings, routes, and user profiles.",
-            "outcome": "The SchoolBasi system has significantly improved school transportation safety and accessibility. Parents report 95% satisfaction with the real-time tracking feature, and school attendance has improved by 27% in pilot areas. The platform has reduced transportation costs for families by 40% through route optimization and shared rides, while providing private bus operators with a 35% increase in efficiency through better booking management.",
+            "outcome": "The SchoolBasi system aims to significantly enhance school transportation safety and accessibility. It is designed to offer real-time tracking features that could achieve high parental satisfaction, with the potential for substantial improvements in school attendance through reliable transport options. The platform seeks to reduce transportation costs for families through optimized routes and shared rides, while aiming to boost efficiency for private bus operators by improving booking management.",
             "image": "/schoolbasi.jpg",
             "technologies": [
                 {
@@ -310,7 +330,7 @@
                 "Integration of dark/light mode theme toggle"
             ],
             "solution": "Developed a full-stack blog application with a React frontend and Flask backend that addresses the need for a user-friendly yet powerful blogging platform. The system implements at least two one-to-many relationships (users-to-posts and posts-to-comments) and one many-to-many relationship (users-to-favorite-posts) with user-submittable attributes. The backend provides full CRUD operations for posts and comments, with RESTful API endpoints optimized for performance. The frontend features multiple routes via React Router, form validation with Formik, and a responsive design with theme customization options.",
-            "outcome": "The Blog Application has been well-received by users looking for a streamlined blogging experience. The platform has achieved a 90% user satisfaction rate, with particular praise for the intuitive interface and responsive design. User engagement metrics show an average session duration of 12 minutes, with 70% of users returning within a week. The authentication system has maintained zero security breaches, while the optimized API endpoints have resulted in page load times under 2 seconds, even with high traffic volumes.",
+            "outcome": "The Blog Application is designed to provide a streamlined blogging experience that could be well-received by users. It aims to deliver an intuitive interface and responsive design that may earn high satisfaction, while seeking to boost engagement through a captivating user experience. The authentication system is built to ensure robust security with no vulnerabilities, and the optimized API endpoints are intended to achieve fast page load times, even under high traffic conditions.",
             "image": "/blog.jpg",
             "technologies": [
                 {
@@ -386,7 +406,7 @@
                 "Deployment of the application using Render"
             ],
             "solution": "Developed a React-based recipe application that simplifies the process of finding and saving recipes. The application connects to TheMealDB API to fetch a wide variety of recipes which users can search through using keywords or ingredients. The clean and intuitive UI displays recipes as cards with images and names, with detailed information available on click. Users can save favorite recipes to a local database via JSON Server, filter search results to find exactly what they need, and manage their saved recipes collection by removing items when no longer needed. The responsive design ensures the application works seamlessly across desktop and mobile devices.",
-            "outcome": "The Recipe Application has enhanced the culinary exploration experience for users with its intuitive interface and efficient functionality. Users report finding recipes 50% faster compared to traditional methods, and the save feature has led to an 80% increase in recipe retention. The application has achieved a user satisfaction rating of 4.7/5 stars, with particular praise for the search functionality and responsive design. The project successfully demonstrated proficiency in API integration and state management using React, serving as a strong portfolio piece for showcasing frontend development skills.",
+            "outcome": "The Recipe Application is crafted to enhance the culinary exploration experience through an intuitive interface and efficient functionality. It aims to enable users to find recipes quickly and retain them effectively with a robust save feature. The application is designed to achieve high user satisfaction, with its search functionality and responsive design intended to stand out as key strengths. The project showcases proficiency in API integration and state management using React, serving as a compelling portfolio piece to demonstrate frontend development skills.",
             "image": "/recipe.jpg",
             "technologies": [
                 {
@@ -435,6 +455,103 @@
         },
         {
             "id": 4,
+            "title": "Gist Tracker Web Application",
+            "description": "A powerful web application for developers to create, manage, and share code snippets (gists) with a clean, intuitive interface inspired by GitHub Gists.",
+            "shortDescription": "Streamlined code snippet management with social features and multi-language support",
+            "detailedDescription": "Gist Tracker is a modern web application designed for developers to efficiently create, manage, and share code snippets. Built with Next.js and MongoDB, it offers a responsive, intuitive interface with features like user authentication, gist CRUD operations, syntax highlighting for multiple programming languages, and social interactions such as favoriting and commenting. The application integrates Tailwind CSS for a sleek UI with amber and teal accents, and leverages TypeScript for type safety. Users can search and filter gists, manage visibility (public/private), and enjoy a seamless experience across desktop, tablet, and mobile devices.",
+            "mvpFeatures": {
+                "timeline": "1-Week Timeline",
+                "features": [
+                    "User Authentication (Signup, Login, Logout)",
+                    "Gist CRUD Operations",
+                    "Multi-Language Syntax Highlighting",
+                    "Public/Private Visibility Settings",
+                    "Search and Filter Functionality",
+                    "Favorite Gists Feature",
+                    "Commenting on Public Gists",
+                    "Responsive Design",
+                    "Profile Management"
+                ]
+            },
+            "problemStatement": "Developers often need a convenient way to store, organize, and share code snippets. Existing solutions like GitHub Gists lack advanced social features, custom filtering, or an intuitive UI tailored for quick access and management. Many alternatives are either overly complex or lack offline-ready simplicity, making it harder for developers to maintain a personal code library, collaborate, or discover reusable snippets efficiently.",
+            "responsibilities": [
+                "Frontend development with Next.js and TypeScript",
+                "UI styling with Tailwind CSS and Radix UI components",
+                "Backend development using Next.js API Routes",
+                "Database design and integration with MongoDB via Mongoose",
+                "Authentication system with JWT and bcrypt",
+                "Form handling and validation with React Hook Form and Zod",
+                "Search and filter algorithm implementation",
+                "Responsive design optimization",
+                "Deployment setup and configuration"
+            ],
+            "solution": "Gist Tracker addresses these challenges by providing a web-based platform where developers can sign up, log in, and manage their code snippets effortlessly. Built with Next.js for server-side rendering and API routes, it uses MongoDB for persistent storage and Mongoose for data modeling. The application supports creating, editing, and deleting gists with rich text descriptions and syntax highlighting, alongside public/private visibility options. Social features like favoriting and commenting foster community engagement, while a robust search and filter system ensures quick access to snippets. Tailwind CSS and Radix UI deliver a modern, responsive design that works across devices.",
+            "outcome": "Gist Tracker aims to streamline code snippet management for developers by providing a user-friendly alternative to traditional gist platforms. It is designed to allow effortless organization of snippets with custom visibility, exploration of public gists, and engagement through favorites and comments. The responsive design ensures accessibility across devices, while the search and filter features are intended to save time when locating specific code. The application seeks to enhance productivity and enjoyment for developers sharing and revisiting their work, with a modern UI crafted to boost overall satisfaction.",
+            "image": "/favs.png",
+            "technologies": [
+                {
+                    "name": "Next.js",
+                    "icon": "⚡"
+                },
+                {
+                    "name": "TypeScript",
+                    "icon": "📝"
+                },
+                {
+                    "name": "Tailwind CSS",
+                    "icon": "🎨"
+                },
+                {
+                    "name": "MongoDB",
+                    "icon": "🍃"
+                },
+                {
+                    "name": "Mongoose",
+                    "icon": "🦠"
+                },
+                {
+                    "name": "JWT",
+                    "icon": "🔒"
+                },
+                {
+                    "name": "bcrypt",
+                    "icon": "🔐"
+                },
+                {
+                    "name": "React Hook Form",
+                    "icon": "📋"
+                },
+                {
+                    "name": "Zod",
+                    "icon": "✅"
+                },
+                {
+                    "name": "Radix UI",
+                    "icon": "🧩"
+                }
+            ],
+            "url": "#",
+            "landingImg": [
+                "/favs.png",
+                "/favne.png",
+                "/gall.png",
+                "/land.png",
+                "/log.png",
+                "/sig.png"
+            ],
+            "liveUrl": "https://patrick-gist-tracker-app.vercel.app/",
+            "githubUrl": "https://github.com/koskei-kipkoech/Gist-Tracker-App",
+            "featured": true,
+            "categories": [
+                "Full-Stack Development",
+                "Web Applications",
+                "Database Management",
+                "Frontend Development",
+                "Backend Development"
+            ]
+        },
+        {
+            "id": 5,
             "title": "My Fashion Web Application",
             "description": "Interactive fashion e-commerce platform with product filtering, favorites, and comments",
             "shortDescription": "Responsive fashion store with search, filter, and user interaction features",
@@ -464,7 +581,7 @@
                 "Deployment of the application using Render"
             ],
             "solution": "Developed a responsive fashion e-commerce platform that enhances the online shopping experience through intuitive navigation and robust product discovery features. The application implements a clean, user-friendly interface with pagination to manage product display efficiently. A comprehensive search and filter system allows users to quickly find products by name, season, or gender. The favorites functionality enables users to save and manage their preferred items with quantity controls. The platform also encourages user engagement through a comment section and increases visual appeal with Swiper carousels for featured products and reviews.",
-            "outcome": "The Fashion Web Application has significantly improved user engagement with the average session duration increasing by 35%. The filter and search features have reduced product discovery time by 60%, while the favorites system has increased return visits by 45%. User feedback has been overwhelmingly positive, with 92% of users rating the interface as intuitive and easy to navigate. The responsive design has also contributed to a 30% increase in mobile traffic, demonstrating the application's cross-device accessibility.",
+            "outcome": "The Fashion Web Application is designed to enhance user engagement through a seamless and intuitive experience. It aims to streamline product discovery with efficient filter and search features, while the favorites system is intended to encourage return visits. The application seeks to earn positive feedback for its easy-to-navigate interface, with a responsive design crafted to ensure accessibility across devices, potentially increasing mobile usage.",
             "image": "/clothes.jpg",
             "technologies": [
                 {
@@ -511,7 +628,7 @@
             ]
         },
         {
-            "id": 5,
+            "id": 6,
             "title": "Blog Application",
             "description": "Dynamic blog platform with user authentication, CRUD functionality, and real-time news integration",
             "shortDescription": "Interactive blog platform with user authentication and real-time news updates",
@@ -539,7 +656,7 @@
                 "Performance optimization for mobile and desktop experiences"
             ],
             "solution": "Developed a comprehensive blog application that bridges the gap between personal content creation and news consumption. The platform implements secure user authentication to protect user data and content, while providing intuitive interfaces for creating, editing, and managing blog posts. The integration with a third-party news API delivers relevant, up-to-date information directly within the application, allowing users to reference current events or find inspiration for their content without leaving the platform. The responsive design ensures a consistent experience across all devices, making content creation and consumption equally accessible on desktop or mobile.",
-            "outcome": "The Blog Application has successfully created a unified platform for content creation and news consumption with notable user engagement. The authentication system has maintained zero security breaches while managing hundreds of user accounts. The platform has seen a 40% increase in user time spent compared to traditional blog platforms, attributable to the seamless integration of personal content and current news. The responsive design has resulted in equal usage across desktop and mobile devices, with mobile engagement increasing by 55% compared to industry averages for similar platforms.",
+            "outcome": "The Blog Application is designed to create a unified platform for content creation and news consumption, aiming to foster strong user engagement. Its authentication system is built to ensure robust security for managing numerous user accounts without vulnerabilities. The platform seeks to increase time spent by users through seamless integration of personal content and current news, while the responsive design is intended to support consistent usage across desktop and mobile devices, potentially boosting mobile engagement.",
             "image": "/newblog.jpg",
             "technologies": [
                 {
@@ -587,7 +704,7 @@
             ]
         },
         {
-            "id": 6,
+            "id": 7,
             "title": "Notes and Events Application",
             "description": "Full-Stack application for personal note-taking and event scheduling with secure authentication",
             "shortDescription": "Seamless note-taking and event management platform with secure user experiences",
@@ -617,7 +734,7 @@
                 "Responsive UI/UX design with HTML and CSS"
             ],
             "solution": "Developed a unified Full-Stack application that bridges the gap between note-taking and event management through an intuitive, secure platform. The React frontend delivers a responsive user experience with seamless transitions between features, while the Flask backend with SQLAlchemy ensures data persistence and integrity. The JWT authentication system provides robust security, protecting user data while enabling personalized experiences. The note management system includes complete CRUD operations with the added ability to pin important notes, while the event tracking feature allows users to organize their schedule efficiently.",
-            "outcome": "The Notes and Events Application has transformed personal organization by providing a centralized platform for information management. Users report saving significant time through the integration of notes and events in a single secure application. The note pinning feature has proven particularly valuable, with users reporting improved prioritization of important information. The secure authentication system has gained positive feedback for its balance of security and user experience, while the responsive design ensures consistent functionality across various devices and screen sizes.",
+            "outcome": "The Notes and Events Application is designed to transform personal organization by offering a centralized platform for information management. It aims to save users time through the seamless integration of notes and events within a single, secure application. The note pinning feature is intended to enhance prioritization of key information, while the secure authentication system seeks to balance robust security with a smooth user experience. The responsive design is crafted to ensure consistent functionality across various devices and screen sizes.",
             "image": "/notes.jpg",
             "technologies": [
                 {
@@ -669,7 +786,7 @@
             ]
         },
         {
-            "id": 7,
+            "id": 8,
             "title": "Primary School LMS",
             "description": "Learning Management System designed for primary education with course management and progress tracking",
             "shortDescription": "Comprehensive educational platform for streamlining primary school teaching and learning",
@@ -699,7 +816,7 @@
                 "Version control and project management with GitHub"
             ],
             "solution": "Developed a comprehensive Learning Management System tailored specifically for primary education environments. The platform features distinct modules for different user roles, including student profiles with simplified navigation, teacher dashboards for course management and student assessment, and parent portals for monitoring progress. The LMS centralizes learning materials in an organized, categorized library that makes resources easily accessible to both teachers and students. The assignment system streamlines the creation, distribution, submission, and grading workflow, while the progress tracking module provides valuable insights into individual and class-wide learning trends.",
-            "outcome": "The Primary School LMS has transformed traditional learning methods by creating a centralized, digital education ecosystem. Teachers report saving an average of 5 hours per week on administrative tasks, allowing more focus on instruction and student engagement. Student assignment completion rates have increased by 25%, while parent engagement with their children's education has grown by 40%. The age-appropriate design has resulted in high adoption rates, with 95% of students able to navigate the platform independently after initial orientation, demonstrating the system's success in creating an efficient and engaging educational process.",
+            "outcome": "The Primary School LMS is designed to transform traditional learning methods by creating a centralized, digital education ecosystem. It aims to save teachers time on administrative tasks, allowing greater focus on instruction and student engagement. The platform seeks to improve student assignment completion rates and enhance parent involvement in their children’s education. With an age-appropriate design, it is intended to enable most students to navigate independently after initial orientation, fostering an efficient and engaging educational experience.",
             "image": "/lms.jpg",
             "technologies": [
                 {
@@ -752,7 +869,7 @@
             ]
         },
         {
-            "id": 8,
+            "id": 9,
             "title": "Recipe Management CLI Application",
             "description": "Command-Line Interface application for managing recipes, categories, and ingredients with SQLAlchemy and SQLite",
             "shortDescription": "Efficient recipe organization through an intuitive command-line interface",
@@ -782,7 +899,7 @@
                 "User experience optimization for command-line environment"
             ],
             "solution": "Developed a streamlined CLI application that organizes recipes, ingredients, and categories through an intuitive command-line interface. The application uses SQLAlchemy with SQLite to provide robust data persistence without requiring internet connectivity. The Click library enables user-friendly interaction through guided commands, while Alembic ensures smooth database migrations. The application allows users to perform complete CRUD operations on recipes, categories, and ingredients, with additional features like search functionality and random recipe suggestions enhancing the user experience. The statistics dashboard provides insights into the user's culinary library, promoting better organization and discovery.",
-            "outcome": "The Recipe Management CLI Application has transformed recipe organization for home cooks and culinary enthusiasts. Users report significant time savings when searching for recipes and planning meals, with the category system enabling efficient organization of growing recipe collections. The ingredient management feature has proven particularly valuable for inventory tracking and shopping list creation. The command-line interface has been praised for its simplicity and efficiency, allowing quick recipe additions and modifications even during cooking sessions. The random recipe suggestion feature has encouraged users to explore their existing recipe collections, reducing meal planning fatigue.",
+            "outcome": "The Recipe Management CLI Application is designed to transform recipe organization for home cooks and culinary enthusiasts. It aims to save time when searching for recipes and planning meals, with the category system intended to enable efficient organization of growing recipe collections. The ingredient management feature is crafted to support inventory tracking and shopping list creation, while the command-line interface seeks to offer simplicity and efficiency for quick recipe additions and modifications, even during cooking sessions. The random recipe suggestion feature is meant to inspire exploration of existing recipe collections, potentially reducing meal planning fatigue.",
             "image": "/clin.jpg",
             "technologies": [
                 {
