@@ -552,6 +552,202 @@
         },
         {
             "id": 5,
+            "title": "Health System Management Application",
+            "description": "A comprehensive health system management application built with Next.js, MongoDB, and TypeScript. This application empowers healthcare providers to efficiently manage client information, medical programs, and program enrollments.",
+            "shortDescription": "Streamlined healthcare management with client tracking and program enrollment capabilities",
+            "detailedDescription": "Health System Management is a modern web application designed for healthcare providers to efficiently manage client information, medical programs, and program enrollments. Built with Next.js 13+ and MongoDB, it offers a responsive, intuitive interface with features like user authentication, client and program CRUD operations, medical history tracking, and program enrollment management. The application integrates Tailwind CSS for a sleek UI and leverages TypeScript for type safety. Users can search and filter clients and programs, manage different types of healthcare programs, and enjoy a seamless experience across desktop, tablet, and mobile devices.",
+            "mvpFeatures": {
+                "timeline": "4-Week Timeline",
+                "features": [
+                    "User Authentication (Signup, Login, Logout)",
+                    "Client CRUD Operations",
+                    "Medical Program CRUD Operations",
+                    "Program Enrollment Management",
+                    "Medical History Tracking",
+                    "Search and Filter Functionality",
+                    "Responsive Dashboard",
+                    "Emergency Contact Management",
+                    "Client Profile Management"
+                ]
+            },
+            "problemStatement": "Healthcare providers often struggle with efficiently managing client information, medical programs, and program enrollments across disparate systems. Existing solutions are either too complex, expensive, or lack the specific features needed for holistic healthcare management. Many alternatives don't provide an intuitive UI for quick access and management, making it harder for healthcare professionals to maintain accurate client records, track medical histories, and manage program enrollments efficiently.",
+            "responsibilities": [
+                "Frontend development with Next.js 13+ and TypeScript",
+                "UI styling with Tailwind CSS and component libraries",
+                "Backend development using Next.js API Routes",
+                "Database design and integration with MongoDB via Mongoose",
+                "Authentication system with NextAuth.js",
+                "Form handling and validation with React Hook Form",
+                "Search and filter algorithm implementation",
+                "Responsive design optimization",
+                "Client medical history tracking system",
+                "Program enrollment management system"
+            ],
+            "solution": "Health System Management addresses these challenges by providing a web-based platform where healthcare providers can sign up, log in, and manage their clients and medical programs effortlessly. Built with Next.js for server-side rendering and API routes, it uses MongoDB for persistent storage and Mongoose for data modeling. The application supports creating, editing, and deleting client profiles with comprehensive medical history tracking, alongside managing various healthcare programs. The program enrollment system allows healthcare providers to efficiently enroll clients into multiple programs and track their progress. Tailwind CSS delivers a modern, responsive design that works across devices, while NextAuth.js ensures secure authentication and authorization.",
+            "outcome": "Health System Management aims to streamline healthcare administration by providing a user-friendly platform for managing clients and programs. It is designed to allow effortless organization of client information, comprehensive tracking of medical histories, and efficient management of program enrollments. The responsive design ensures accessibility across devices, while the search and filter features are intended to save time when locating specific clients or programs. The application seeks to enhance productivity and efficiency for healthcare providers, with a modern UI crafted to boost overall satisfaction and reduce administrative burden.",
+            "image": "/health.png",
+            "technologies": [
+                {
+                    "name": "Next.js 13+",
+                    "icon": "⚡"
+                },
+                {
+                    "name": "TypeScript",
+                    "icon": "📝"
+                },
+                {
+                    "name": "Tailwind CSS",
+                    "icon": "🎨"
+                },
+                {
+                    "name": "MongoDB",
+                    "icon": "🍃"
+                },
+                {
+                    "name": "Mongoose",
+                    "icon": "🦠"
+                },
+                {
+                    "name": "NextAuth.js",
+                    "icon": "🔒"
+                },
+                {
+                    "name": "React Hook Form",
+                    "icon": "📋"
+                },
+                {
+                    "name": "Framer Motion",
+                    "icon": "✨"
+                },
+                {
+                    "name": "React",
+                    "icon": "⚛️"
+                },
+                {
+                    "name": "App Router",
+                    "icon": "🧭"
+                }
+            ],
+            "url": "#",
+            "landingImg": [
+                "/health.png",
+                "/health1.png",
+                "/health2.png",
+                "/health3.png",
+                "/health4.png",
+                "/health5.png",
+                "/health6.png",
+                "/health7.png",
+                "/health8.png"
+            ],
+            "liveUrl": "https://kipp-health-system.vercel.app/",
+            "githubUrl": "https://github.com/koskei-kipkoech/health-system",
+            "featured": true,
+            "categories": [
+                "Full-Stack Development",
+                "Healthcare Management",
+                "Database Management",
+                "Frontend Development",
+                "Backend Development"
+            ]
+        },
+        {
+            "id": 6,
+            "title": "🌤️ Weather App",
+            "description": "A modern, responsive weather application built with Next.js frontend and Laravel backend, providing real-time weather information and forecasts.",
+            "shortDescription": "Elegant weather application with real-time data and beautiful visualizations",
+            "detailedDescription": "Weather App is a sleek, responsive web application that delivers real-time weather information and forecasts to users. Built with a Next.js frontend and Laravel backend, it leverages modern web technologies to provide an optimal user experience across all devices. The application features location-based weather data, detailed forecasts, beautiful weather icons and animations, and lightning-fast performance. With its intuitive interface and comprehensive weather information, users can easily stay informed about current conditions and upcoming weather patterns in their area or any location worldwide.",
+            "mvpFeatures": {
+                "timeline": "2-Week Timeline",
+                "features": [
+                    "Real-time Weather Data Display",
+                    "Location-based Weather Information",
+                    "Detailed Weather Forecasts",
+                    "Responsive Design for All Devices",
+                    "Beautiful Weather Icons and Animations",
+                    "Search for Weather by Location",
+                    "Temperature Unit Conversion (°C/°F)",
+                    "Dark/Light Mode Toggle",
+                    "Weather Alerts and Notifications"
+                ]
+            },
+            "problemStatement": "Many weather applications provide either limited information or overwhelm users with complex meteorological data. Existing solutions often lack visual appeal, responsiveness across devices, or intuitive interfaces. Users need a streamlined way to access accurate, real-time weather information with forecasts that are easy to understand at a glance. Additionally, many weather apps struggle with performance issues, especially on mobile devices, creating frustration for users who need quick weather updates.",
+            "responsibilities": [
+                "Frontend development with Next.js and TypeScript",
+                "Backend development with Laravel",
+                "Integration with third-party weather APIs",
+                "UI/UX design with Tailwind CSS",
+                "Responsive design implementation",
+                "Weather data processing and visualization",
+                "Performance optimization",
+                "API endpoint development",
+                "Error handling and fallback strategies",
+                "Cross-browser compatibility testing"
+            ],
+            "solution": "Weather App addresses these challenges by providing a clean, intuitive interface that displays weather information in a visually appealing manner. The application uses Next.js for the frontend to ensure fast loading times and optimal performance across devices. The Laravel backend efficiently processes and serves weather data from third-party APIs, implementing caching strategies to reduce API calls and improve response times. The app features a responsive design built with Tailwind CSS, ensuring a consistent experience from mobile to desktop. Weather information is presented through beautiful icons and animations, making it easy for users to understand current conditions and forecasts at a glance. The application also includes features like location-based weather, detailed forecasts, and unit conversion to provide a comprehensive weather experience.",
+            "outcome": "Weather App delivers a seamless weather experience that helps users stay informed about current conditions and upcoming forecasts. With its intuitive design and responsive interface, users can quickly access weather information on any device. The application's performance optimizations ensure fast loading times and smooth interactions, even on mobile networks. By presenting weather data in a visually appealing manner with beautiful icons and animations, the app makes it easy for users to understand complex meteorological information at a glance. The combination of real-time data, detailed forecasts, and location-based information provides users with a comprehensive weather solution that enhances their daily planning and decision-making.",
+            "image": "/weather.png",
+            "technologies": [
+                {
+                    "name": "Next.js",
+                    "icon": "⚡"
+                },
+                {
+                    "name": "Laravel",
+                    "icon": "🔥"
+                },
+                {
+                    "name": "TypeScript",
+                    "icon": "📝"
+                },
+                {
+                    "name": "Tailwind CSS",
+                    "icon": "🎨"
+                },
+                {
+                    "name": "React",
+                    "icon": "⚛️"
+                },
+                {
+                    "name": "PHP",
+                    "icon": "🐘"
+                },
+                {
+                    "name": "MySQL",
+                    "icon": "🗄️"
+                },
+                {
+                    "name": "App Router",
+                    "icon": "🧭"
+                },
+                {
+                    "name": "Weather API",
+                    "icon": "☁️"
+                },
+                {
+                    "name": "Framer Motion",
+                    "icon": "✨"
+                }
+            ],
+            "url": "#",
+            "landingImg": [
+                "/weather.png",
+                "/weather2.png",
+                "/weather3.png"
+            ],
+            "liveUrl": "",
+            "githubUrl": "https://github.com/koskei-kipkoech/Weather-App",
+            "featured": true,
+            "categories": [
+                "Full-Stack Development",
+                "Web Applications",
+                "Frontend Development",
+                "Backend Development",
+                "API Integration"
+            ]
+        },
+        {
+            "id": 7,
             "title": "My Fashion Web Application",
             "description": "Interactive fashion e-commerce platform with product filtering, favorites, and comments",
             "shortDescription": "Responsive fashion store with search, filter, and user interaction features",
@@ -628,7 +824,7 @@
             ]
         },
         {
-            "id": 6,
+            "id": 8,
             "title": "Blog Application",
             "description": "Dynamic blog platform with user authentication, CRUD functionality, and real-time news integration",
             "shortDescription": "Interactive blog platform with user authentication and real-time news updates",
@@ -704,7 +900,7 @@
             ]
         },
         {
-            "id": 7,
+            "id": 9,
             "title": "Notes and Events Application",
             "description": "Full-Stack application for personal note-taking and event scheduling with secure authentication",
             "shortDescription": "Seamless note-taking and event management platform with secure user experiences",
@@ -786,7 +982,7 @@
             ]
         },
         {
-            "id": 8,
+            "id": 10,
             "title": "Primary School LMS",
             "description": "Learning Management System designed for primary education with course management and progress tracking",
             "shortDescription": "Comprehensive educational platform for streamlining primary school teaching and learning",
@@ -869,7 +1065,7 @@
             ]
         },
         {
-            "id": 9,
+            "id": 11,
             "title": "Recipe Management CLI Application",
             "description": "Command-Line Interface application for managing recipes, categories, and ingredients with SQLAlchemy and SQLite",
             "shortDescription": "Efficient recipe organization through an intuitive command-line interface",
