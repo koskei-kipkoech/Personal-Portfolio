@@ -95,7 +95,7 @@ function Navbar() {
           {/* Social icons with hover animations */}
           <div className="flex items-center gap-4">
             <a
-              href="c"
+              href="https://github.com/koskei-kipkoech"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white/70 hover:text-white transition-colors duration-200"
